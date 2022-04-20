@@ -1,5 +1,8 @@
 # Next.JS Boilerplate
 
+[![CodeQL Analysis Workflow Status](https://github.com/Rethunk-Tech/nextjs-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Rethunk-Tech/nextjs-boilerplate/actions)
+[![License](https://badgen.net/badge/License/CC-BY-NC-SA-2.0/blue)](https://github.com/Rethunk-Tech/nextjs-boilerplate/blob/main/LICENSE.txt)
+
 This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with [TypeScript](https://www.typescriptlang.org/) and [Material UI](https://mui.com/).
 
 Code style is enforced by React [ESLint](https://eslint.org/) rules.
