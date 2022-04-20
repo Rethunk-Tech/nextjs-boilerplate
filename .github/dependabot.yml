@@ -1,0 +1,24 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      day: "wednesday"
+      time: "08:00"
+      timezone: "America/Vancouver"
+    labels:
+      - "npm"
+      - "dependencies"
+    versioning-strategy: widen
+
+- package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      day: "wednesday"
+      time: "08:00"
+      timezone: "America/Vancouver"
+    labels:
+      - "actions"
+      - "dependencies"
