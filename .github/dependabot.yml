@@ -8,7 +8,6 @@ updates:
       time: "08:00"
       timezone: "America/Vancouver"
     labels:
-      - "npm"
       - "dependencies"
     versioning-strategy: widen
 
