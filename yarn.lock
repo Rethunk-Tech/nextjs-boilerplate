@@ -809,10 +809,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:17.0.29":
-  version: 17.0.29
-  resolution: "@types/node@npm:17.0.29"
-  checksum: cda1c6e4d1ec12bb3c98f090acaf3737846c6ec525153dc8a6fa7e5413581d9ce242a886eac562c4164a5cba26db57f4008c5c185cd12b374ad9258a1b8fa1c3
+"@types/node@npm:^17.0.30":
+  version: 17.0.30
+  resolution: "@types/node@npm:17.0.30"
+  checksum: 562e97f9be4cc1f297adda2d68b671c45900980e2350eec18803c10ca2b9086ae9319dcce109ec62e6f8e032a56c423b1216d9a04b4f0324514fc3d6de8e1f53
   languageName: node
   linkType: hard
 
@@ -3476,7 +3476,7 @@ __metadata:
     "@emotion/styled": "npm:^11.8.1"
     "@mui/icons-material": "npm:^5.6.2"
     "@mui/material": "npm:^5.6.3"
-    "@types/node": "npm:17.0.29"
+    "@types/node": "npm:^17.0.30"
     "@types/react": "npm:18.0.8"
     "@types/react-dom": "npm:18.0.2"
     "@typescript-eslint/eslint-plugin": "npm:^5.21.0"
