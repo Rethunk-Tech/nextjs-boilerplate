@@ -43,3 +43,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - [Getting Started with Material UI](https://mui.com/material-ui/getting-started/learn/) - learning resources for Material UI.
 
 You can check out [the Material UI GitHub repository](https://github.com/mui/material-ui) - your feedback and contributions are welcome!
+
+## Contributing
+
+Consider using [Gitmoji](htpps://gitmoji.dev) in your commit messages.
+
+Here are some we use:
+
+||Code|Meaning
+|-|-|-|
+| :bug: | `:bug:` | Fix a bug
+| :green_heart: | `:green_heart:` | Fix CI Build
+| :rotating_light: | `:rotating_light:` | Fix linter warnings
+| :zap: | `:zap:` | Improve performance
+| :sparkles: | `:sparkles:` | Introduce new feature
+| :recycle: | `:recycle:` | Refactor code
+| :fire: | `:fire:` | Remove code or files
+| :see_no_evil: | `:see_no_evil:` | Update a .gitignore file
+| :construction_worker: | `:construction_worker:` | Update CI build system
+| :bulb: | `:bulb:` | Update comments in code
+| :memo: | `:memo:` | Update documentation
+| :arrow_up: | `:arrow_up:` | Upgrade dependency
