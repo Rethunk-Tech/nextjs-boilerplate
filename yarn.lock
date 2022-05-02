@@ -1052,13 +1052,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.21.0":
-  version: 5.21.0
-  resolution: "@typescript-eslint/eslint-plugin@npm:5.21.0"
+"@typescript-eslint/eslint-plugin@npm:^5.22.0":
+  version: 5.22.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:5.22.0"
   dependencies:
-    "@typescript-eslint/scope-manager": "npm:5.21.0"
-    "@typescript-eslint/type-utils": "npm:5.21.0"
-    "@typescript-eslint/utils": "npm:5.21.0"
+    "@typescript-eslint/scope-manager": "npm:5.22.0"
+    "@typescript-eslint/type-utils": "npm:5.22.0"
+    "@typescript-eslint/utils": "npm:5.22.0"
     debug: "npm:^4.3.2"
     functional-red-black-tree: "npm:^1.0.1"
     ignore: "npm:^5.1.8"
@@ -1071,7 +1071,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 43893f8b6b95c75a3e83b7e759b61e0d3363c7527602916874551aaa6ad25fea61442aab81351591db904d13fe227403d5a997793dd2643afa6ff1cf97172c1f
+  checksum: acf7403159f02808a662ee4f12611f2bb5791c028d88441c8b486b823bade51c70a60aa245b57bb2e1424bbefcef1fb1e38b58eedf15c627f7471532db1da33c
   languageName: node
   linkType: hard
 
@@ -1129,11 +1129,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:5.21.0":
-  version: 5.21.0
-  resolution: "@typescript-eslint/type-utils@npm:5.21.0"
+"@typescript-eslint/type-utils@npm:5.22.0":
+  version: 5.22.0
+  resolution: "@typescript-eslint/type-utils@npm:5.22.0"
   dependencies:
-    "@typescript-eslint/utils": "npm:5.21.0"
+    "@typescript-eslint/utils": "npm:5.22.0"
     debug: "npm:^4.3.2"
     tsutils: "npm:^3.21.0"
   peerDependencies:
@@ -1141,7 +1141,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 192b45e03f2be60c39fb24dcf887fad0f9378c9db0ea6a2677e813f8ee9f828a7349e53cb91825663778c0cfe1ec7b794ee2800161dd246313c77eadebf08162
+  checksum: c67352a463a82bb09dcde514a84a0420e25b96c230eb74887b21eb90f0beba0567812d3f29349fd045ba4a82084492e52fdcdd9b3dede52a467d3b86cbb99528
   languageName: node
   linkType: hard
 
@@ -1195,19 +1195,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:5.21.0":
-  version: 5.21.0
-  resolution: "@typescript-eslint/utils@npm:5.21.0"
+"@typescript-eslint/utils@npm:5.22.0":
+  version: 5.22.0
+  resolution: "@typescript-eslint/utils@npm:5.22.0"
   dependencies:
     "@types/json-schema": "npm:^7.0.9"
-    "@typescript-eslint/scope-manager": "npm:5.21.0"
-    "@typescript-eslint/types": "npm:5.21.0"
-    "@typescript-eslint/typescript-estree": "npm:5.21.0"
+    "@typescript-eslint/scope-manager": "npm:5.22.0"
+    "@typescript-eslint/types": "npm:5.22.0"
+    "@typescript-eslint/typescript-estree": "npm:5.22.0"
     eslint-scope: "npm:^5.1.1"
     eslint-utils: "npm:^3.0.0"
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 4565935228b0223c30da86457f58336f8214340907c62d81865cb2326efec369789ec5e885974513f71575df8f835e21eba2c6a1c5908b8c56a915f230177030
+  checksum: 52dc16502fc19364dd2317907e2454667c5d90b7570edeb81d9a83ee805cdcb8c71463b7970c9b5078c82f87e0803122f75482ec8d9184b192f88b43328a196f
   languageName: node
   linkType: hard
 
@@ -4813,7 +4813,7 @@ __metadata:
     "@types/node": "npm:^17.0.31"
     "@types/react": "npm:18.0.8"
     "@types/react-dom": "npm:^18.0.3"
-    "@typescript-eslint/eslint-plugin": "npm:^5.21.0"
+    "@typescript-eslint/eslint-plugin": "npm:^5.22.0"
     "@typescript-eslint/parser": "npm:^5.22.0"
     cypress: "npm:^9.6.0"
     eslint: "npm:8.14.0"
