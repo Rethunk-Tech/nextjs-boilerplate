@@ -3,9 +3,12 @@
 [![CodeQL Analysis Workflow Status](https://github.com/Rethunk-Tech/nextjs-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Rethunk-Tech/nextjs-boilerplate/actions)
 [![License](https://badgen.net/badge/License/CC-BY-NC-SA-2.0/blue)](https://github.com/Rethunk-Tech/nextjs-boilerplate/blob/main/LICENSE.txt)
 
-This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with [TypeScript](https://www.typescriptlang.org/) and [Material UI](https://mui.com/).
+This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with:
 
-Code style is enforced by React [ESLint](https://eslint.org/) rules.
+- Fully typed with [TypeScript](https://www.typescriptlang.org/).
+- Style/Theme engine and Icons from [Material UI](https://mui.com/).
+- Code style is enforced by React [ESLint](https://eslint.org/) rules.
+- End-to-End Testing with [Cypress](https://www.cypress.io/).
 
 ## Getting Started
 
@@ -34,15 +37,18 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js GitHub Repository](https://github.com/vercel/next.js/)
 
 ### Material UI
 
 - [Material UI Components](https://mui.com/material-ui/) - index of Material UI components.
 - [Getting Started with Material UI](https://mui.com/material-ui/getting-started/learn/) - learning resources for Material UI.
+- [Material UI GitHub Repository](https://github.com/mui/material-ui)
 
-You can check out [the Material UI GitHub repository](https://github.com/mui/material-ui) - your feedback and contributions are welcome!
+### Cypress E2E Testing
+
+- [Cypress: Writing Your First Test](https://docs.cypress.io/guides/getting-started/writing-your-first-test) - Get started with Cypress testing.
+- [Cypress GitHub Repository](https://github.com/cypress-io/cypress)
 
 ## Contributing
 
