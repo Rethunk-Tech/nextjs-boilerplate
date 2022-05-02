@@ -1,10 +1,11 @@
 import { CacheProvider } from '@emotion/react'
 import type { EmotionCache } from '@emotion/utils'
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material'
+import type { Theme } from '@mui/material/styles'
 import { styled } from '@mui/material/styles'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import type { PropsWithChildren } from 'react'
+import type { FunctionComponent, PropsWithChildren } from 'react'
 import 'styles/globals.css'
 import lightThemeOptions from 'styles/lightThemeOptions'
 import createEmotionCache from 'utility/createEmotionCache'
@@ -13,12 +14,12 @@ interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache
 }
 
-const clientSideEmotionCache = createEmotionCache()
+const clientSideEmotionCache: EmotionCache = createEmotionCache()
 
-const lightTheme = createTheme(lightThemeOptions)
+const lightTheme: Theme = createTheme(lightThemeOptions)
 
 const Main = styled('main', {
-  shouldForwardProp: (prop) => prop !== 'open'
+  shouldForwardProp: (prop: PropertyKey) => prop !== 'open'
 })(({ theme }) => ({
   display:       'flex',
   flexDirection: 'column',
@@ -29,8 +30,8 @@ const Main = styled('main', {
     duration: theme.transitions.duration.leavingScreen
   }),
 }))
- 
-const MyApp: React.FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProps>) => {
+
+const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProps>) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
   return (

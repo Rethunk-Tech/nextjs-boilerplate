@@ -1,4 +1,4 @@
-import { EmotionCache } from '@emotion/cache'
+import type { EmotionCache } from '@emotion/cache'
 import type { EmotionCriticalToChunks } from '@emotion/server/create-instance'
 import createEmotionServer from '@emotion/server/create-instance'
 import type {
@@ -8,7 +8,7 @@ import type {
 } from 'next/dist/shared/lib/utils'
 import type { DocumentContext } from 'next/document'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { NextRouter } from 'next/router'
+import type { NextRouter } from 'next/router'
 import { Children } from 'react'
 import theme from 'styles/lightThemeOptions'
 import createEmotionCache from 'utility/createEmotionCache'

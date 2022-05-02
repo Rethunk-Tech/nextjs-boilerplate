@@ -1,6 +1,7 @@
+import type { Theme } from '@mui/material/styles'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
-const lightThemeOptions = createTheme({
+const lightThemeOptions: Theme = createTheme({
   palette: {
     mode: 'light',
   },
