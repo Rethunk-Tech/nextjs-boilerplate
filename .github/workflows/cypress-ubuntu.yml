@@ -1,16 +1,16 @@
-name: Cypress E2E Tests
+name: Cypress Chrome E2E Tests
 
 on: [push]
 
 jobs:
   cypress-ubuntu-20:
     runs-on: ubuntu-20.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     strategy:
       matrix:
         node: [17, 16, 14]
 
-    name: Ubuntu 20.04, Chrome, Node v${{ matrix.node }}
+    name: Ubuntu 20.04, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: Cypress run
+      - name: Cypress run Chrome
         uses: cypress-io/github-action@v2
         with:
           record: false
@@ -30,6 +30,20 @@ jobs:
           # group: Chrome Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: chrome
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Cypress run Firefox
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Firefox Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: firefox
           build: yarn run build
           start: yarn run start
           wait-on: 'http://localhost:9000'
@@ -44,12 +58,12 @@ jobs:
 
   cypress-ubuntu-18:
     runs-on: ubuntu-18.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     strategy:
       matrix:
         node: [16, 14]
 
-    name: Ubuntu 18.04, Chrome, Node v${{ matrix.node }}
+    name: Ubuntu 18.04, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -61,7 +75,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
-      - name: Cypress run
+      - name: Cypress run Chrome
         uses: cypress-io/github-action@v2
         with:
           record: false
@@ -69,6 +83,20 @@ jobs:
           # group: Chrome Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: chrome
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cypress run Firefox
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Firefox Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: firefox
           build: yarn run build
           start: yarn run start
           wait-on: 'http://localhost:9000'
