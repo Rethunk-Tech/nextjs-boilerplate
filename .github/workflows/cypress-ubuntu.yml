@@ -1,0 +1,112 @@
+name: Cypress E2E Tests on Ubuntu
+
+on: [push]
+
+jobs:
+  cypress-ubuntu-20:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node: [17, 16, 14]
+
+    name: 20.04, Node v${{ matrix.node }}
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Cypress run Chrome
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Chrome Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: chrome
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Cypress run Firefox
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Firefox Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: firefox
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+  cypress-ubuntu-18:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node: [16, 14]
+
+    name: 18.04, Node v${{ matrix.node }}
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Cypress run Chrome
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Chrome Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: chrome
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cypress run Firefox
+        uses: cypress-io/github-action@v2
+        with:
+          record: false
+          # tag: node-${{ matrix.node }}
+          # group: Firefox Tests on Node v${{ matrix.node }}
+          cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
+          browser: firefox
+          build: yarn run build
+          start: yarn run start
+          wait-on: 'http://localhost:9000'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      # - uses: actions/upload-artifact@v2
+      #   if: always()
+      #   with:
+      #     name: cypress-videos
+      #     path: cypress/videos
