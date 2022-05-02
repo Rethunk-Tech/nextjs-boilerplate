@@ -25,8 +25,8 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           record: false
-          tag: node-${{ matrix.node }}
-          group: Chrome Tests on Node v${{ matrix.node }}
+          # tag: node-${{ matrix.node }}
+          # group: Chrome Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: chrome
           build: yarn run build
