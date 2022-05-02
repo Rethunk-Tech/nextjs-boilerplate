@@ -3,8 +3,35 @@ name: Cypress E2E Tests
 on: [push]
 
 jobs:
+  install-job:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+        # only install the dependencies without running any tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+      
+      - run: yarn run build
+    
+      # only upload the local folders we built / updated
+      #   ./public
+      # TIP: we want to avoid uploading node_modules since it is SLOW
+      # https://glebbahmutov.com/blog/parallel-cypress-tests-gh-action/
+      - name: Save built folders 🆙
+        uses: actions/upload-artifact@v2
+        with:
+          name: built
+          path: |
+            public
+
   cypress-run:
     runs-on: ubuntu-20.04
+    needs: install-job
     timeout-minutes: 5
     strategy:
       matrix:
@@ -21,6 +48,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
+      - name: Download built folders ⏬
+        uses: actions/download-artifact@v2
+        with:
+          name: built
+
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
