@@ -1,4 +1,4 @@
-name: Cypress Chrome E2E Tests
+name: Cypress E2E Tests on Ubuntu
 
 on: [push]
 
@@ -10,7 +10,7 @@ jobs:
       matrix:
         node: [17, 16, 14]
 
-    name: Ubuntu 20.04, Node v${{ matrix.node }}
+    name: 20.04, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -63,7 +63,7 @@ jobs:
       matrix:
         node: [16, 14]
 
-    name: Ubuntu 18.04, Node v${{ matrix.node }}
+    name: 18.04, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
