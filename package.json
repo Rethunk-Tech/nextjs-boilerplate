@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "^5.21.0",
     "cypress": "^9.6.0",
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5",
+    "eslint-config-next": "^12.1.6",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "start-server-and-test": "^1.14.0",
