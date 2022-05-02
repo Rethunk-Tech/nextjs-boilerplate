@@ -1,4 +1,4 @@
-name: Cypress Chrome on Ubuntu 20.04
+name: Cypress E2E Tests
 
 on: [push]
 
@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         node: [14, 16, 17]
-    name: E2E Chrome on Node v${{ matrix.node }}
+    name: Ubuntu 20.04, Chrome, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
