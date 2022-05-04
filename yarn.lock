@@ -1075,6 +1075,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/experimental-utils@npm:^5.0.0":
+  version: 5.22.0
+  resolution: "@typescript-eslint/experimental-utils@npm:5.22.0"
+  dependencies:
+    "@typescript-eslint/utils": "npm:5.22.0"
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: 10a37f84a50403f1cbc5b5a986b59a06e069bc4d26f4c51b9e37d457eecf659c3b4c4a7b24e1a98c0ec830f69f7ff8718f376bd493d86a3b58ee943a99ddb17c
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/parser@npm:^5.21.0":
   version: 5.21.0
   resolution: "@typescript-eslint/parser@npm:5.21.0"
@@ -2282,6 +2293,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-typescript-sort-keys@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "eslint-plugin-typescript-sort-keys@npm:2.1.0"
+  dependencies:
+    "@typescript-eslint/experimental-utils": "npm:^5.0.0"
+    json-schema: "npm:^0.4.0"
+    natural-compare-lite: "npm:^1.4.0"
+  peerDependencies:
+    "@typescript-eslint/parser": ^1 || ^2 || ^3 || ^4 || ^5
+    eslint: ^5 || ^6 || ^7 || ^8
+    typescript: ^3 || ^4
+  checksum: da7dfe320768418ac78d09a4c1f760d0c8a213293ddd735b57d4ad6188a2ae4fd032225c00329b87a56e5086a969aacbd2a1e1a97c8f33815e8a30dc69bfbb27
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -3324,7 +3350,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-schema@npm:0.4.0":
+"json-schema@npm:0.4.0, json-schema@npm:^0.4.0":
   version: 0.4.0
   resolution: "json-schema@npm:0.4.0"
   checksum: 54562ace314c3b4441c8daf87eb45db2a454d19aa0fd402cdf4cda5806e444b9e03c79845a93d9c1bca19694386c40d87282c14749ca02915732a6315b3a54b6
@@ -3641,6 +3667,13 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: c87b8384f305756695669e409ec54d5f2f2862f5cb5b138c8f539bbae102619a8e523cb074a24e6b501924d375fc80f860a5ce8fa566e3e5cee08f1f2d98bf30
+  languageName: node
+  linkType: hard
+
+"natural-compare-lite@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "natural-compare-lite@npm:1.4.0"
+  checksum: e5544056864e990c8fb4fe8ca91d01f8977586969d89adccd2ccea71fea468471b953088021fc90031800410a5042576594dc4005bf02db1794ee4ff0befc07c
   languageName: node
   linkType: hard
 
@@ -4820,6 +4853,7 @@ __metadata:
     eslint-config-next: "npm:^12.1.6"
     eslint-plugin-react: "npm:^7.29.4"
     eslint-plugin-react-hooks: "npm:^4.5.0"
+    eslint-plugin-typescript-sort-keys: "npm:^2.1.0"
     next: "npm:^12.1.6"
     react: "npm:18.1.0"
     react-dom: "npm:18.1.0"

@@ -21,7 +21,8 @@
   "plugins": [
     "react",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "typescript-sort-keys"
   ],
   "rules": {
     // force two spaces indentation
@@ -146,7 +147,11 @@
     // we don"t use prop types
     "react/prop-types": [
       "off"
-    ]
+    ],
+
+    // force sorting interface and enum keys
+    "typescript-sort-keys/interface": "error",
+    "typescript-sort-keys/string-enum": "error"
   },
   "settings": {
     "react": {
