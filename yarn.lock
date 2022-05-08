@@ -1011,7 +1011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.0.8":
+"@types/react@npm:*":
   version: 18.0.8
   resolution: "@types/react@npm:18.0.8"
   dependencies:
@@ -1019,6 +1019,17 @@ __metadata:
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: fd47cac45f230f1654eb570e3e3cb975974ab9f999b3a8dfef4250d06c513c488d38b2cc6d5f2f9dd65e48c46f348fdde023af61f5a095e51cbaecc5f1736684
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.0.9":
+  version: 18.0.9
+  resolution: "@types/react@npm:18.0.9"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 3864b098db970680dc725535551b6cd185c197bfe69075e446e16f648ab26c108c0f4a899ad7ab03c8b18c8304f3624cb68e2d81da090dee08053a26ca4977f8
   languageName: node
   linkType: hard
 
@@ -4844,7 +4855,7 @@ __metadata:
     "@mui/material": "npm:^5.6.3"
     "@next/eslint-plugin-next": "npm:^12.1.6"
     "@types/node": "npm:^17.0.31"
-    "@types/react": "npm:18.0.8"
+    "@types/react": "npm:^18.0.9"
     "@types/react-dom": "npm:^18.0.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.22.0"
     "@typescript-eslint/parser": "npm:^5.22.0"
