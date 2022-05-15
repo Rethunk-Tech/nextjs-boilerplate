@@ -965,7 +965,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.31":
+"@types/node@npm:*":
   version: 17.0.31
   resolution: "@types/node@npm:17.0.31"
   checksum: 34c7cc646074a0e56c98cb94ac132493352163fbdf38cdafb6c846fad34cc9ccf87a3b4e6921e4d06956a417cf25bb6cba8d7b521dc4cd1540f09fa45b8354f8
@@ -976,6 +976,13 @@ __metadata:
   version: 14.18.16
   resolution: "@types/node@npm:14.18.16"
   checksum: 9f59951206e3cddc5f29cb5c130a2bcfe255a2d4520c9fb4a53c3aca437c9cf7594d23ea0d687d7940b0d3d5ca33640e691048af760895ece949b3ffcb43186c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.33":
+  version: 17.0.33
+  resolution: "@types/node@npm:17.0.33"
+  checksum: 44c0436db2851ddbfc2133e132e48f1a261f115cddad0dc3e52ce6dd66f3e667f419d0a0b13f873cd280a2f4ade2128174f4c0b4c4c58ff94639a249e392f8ee
   languageName: node
   linkType: hard
 
@@ -4924,7 +4931,7 @@ __metadata:
     "@mui/icons-material": "npm:^5.6.2"
     "@mui/material": "npm:^5.7.0"
     "@next/eslint-plugin-next": "npm:^12.1.6"
-    "@types/node": "npm:^17.0.31"
+    "@types/node": "npm:^17.0.33"
     "@types/react": "npm:^18.0.9"
     "@types/react-dom": "npm:^18.0.3"
     "@typescript-eslint/eslint-plugin": "npm:^5.23.0"
