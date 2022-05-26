@@ -1019,12 +1019,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.4":
-  version: 18.0.4
-  resolution: "@types/react-dom@npm:18.0.4"
+"@types/react-dom@npm:^18.0.5":
+  version: 18.0.5
+  resolution: "@types/react-dom@npm:18.0.5"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 72e54014afe46d1efbaf6b518ea51e6ca1feb18fe537829f45110af53441a2ba2e3fd81207a49d8724fd68e37f57cbbc717386b655d492f8a1c6404deaa02f6f
+  checksum: ec0ed6965cd21e78be6111c1ec0090e3be31d81a54aff392f3a2cec3c0b730a7fca21fc1109e92eb8260849f9e3d4ea01f4a9f0e0793a85883b533a8b71a317d
   languageName: node
   linkType: hard
 
@@ -5064,7 +5064,7 @@ __metadata:
     "@next/eslint-plugin-next": "npm:^12.1.6"
     "@types/node": "npm:^17.0.35"
     "@types/react": "npm:^18.0.9"
-    "@types/react-dom": "npm:^18.0.4"
+    "@types/react-dom": "npm:^18.0.5"
     "@typescript-eslint/eslint-plugin": "npm:^5.25.0"
     "@typescript-eslint/parser": "npm:^5.25.0"
     cypress: "npm:^9.6.1"
