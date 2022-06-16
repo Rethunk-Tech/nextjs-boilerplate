@@ -12,3 +12,6 @@ describe('Index', () => {
     cy.get('h1').contains('Welcome to Next.js!')
   })
 })
+
+// tslint: isolated modules
+export { }
