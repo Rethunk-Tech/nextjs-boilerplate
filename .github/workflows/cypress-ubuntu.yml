@@ -42,8 +42,8 @@ jobs:
           # group: Firefox Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: firefox
-          build: yarn run build
-          start: yarn run start
+          build: echo # Already built from Chrome test
+          start: echo # Already running from Chrome test
           wait-on: 'http://localhost:9000'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -93,8 +93,8 @@ jobs:
           # group: Firefox Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: firefox
-          build: yarn run build
-          start: yarn run start
+          build: echo # Already built from Chrome test
+          start: echo # Already running from Chrome test
           wait-on: 'http://localhost:9000'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
