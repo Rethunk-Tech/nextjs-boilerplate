@@ -4400,12 +4400,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.1.0":
-  version: 18.1.0
-  resolution: "react@npm:18.1.0"
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: 2ec5d96c4af7aaf531f92a61167ce433d2095bf041586b8eec4e2474ed7320b3977c762e46a778236de857619709e2547a9c3bb189b2d59faff4cf4968ad142a
+  checksum: 8434e5782c52b3bf18a80b666348977924ee3827895fa03ec3ffb9faca90c460049f14130428dd1546bab6cf3b2c277f2c243d3c2a856501331d2e69c24b2bb9
   languageName: node
   linkType: hard
 
@@ -5117,7 +5117,7 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.5.0"
     eslint-plugin-typescript-sort-keys: "npm:^2.1.0"
     next: "npm:^12.1.6"
-    react: "npm:18.1.0"
+    react: "npm:^18.2.0"
     react-dom: "npm:18.1.0"
     start-server-and-test: "npm:^1.14.0"
     typescript: "npm:^4.7.3"
