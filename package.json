@@ -24,7 +24,7 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.2",
+    "@babel/core": "^7.18.5",
     "@next/eslint-plugin-next": "^12.1.6",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.13",
