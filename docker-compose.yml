@@ -10,6 +10,7 @@ services:
         #BUILD_TYPE: dev
         NODE_VERSION: lts
         #NODE_VERSION: current
+        HTTPD_VERSION: 2.4
     restart: unless-stopped
     ports:
       - 9000:9000

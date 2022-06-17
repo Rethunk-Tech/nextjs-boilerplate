@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG NODE_VERSION="lts"
+ARG HTTPD_VERSION="2.4"
 ARG BUILD_TYPE="dev"
 
 ###########################################################
@@ -43,13 +44,20 @@ CMD exit
 ## nextjs-prod - production
 ###########################################################
 
-FROM node:${NODE_VERSION}-alpine AS nextjs-prod
+FROM httpd:${HTTPD_VERSION}-alpine AS nextjs-prod
 ENV HOME "/app"
 WORKDIR $HOME
 
+# prepare base image...
+RUN rm -Rf /usr/local/apache2/htdocs/
+RUN ln -s "$HOME" /usr/local/apache2/htdocs
+RUN sed -ri 's~^(Listen) 80$~\1 9000~g' /usr/local/apache2/conf/httpd.conf
+
 # copy files needed for content output...
 COPY --from=nextjs-builder [ "$HOME/out", "$HOME/" ]
+
 # ensure everything is good
+RUN apachectl configtest
 
 EXPOSE 9000
 
