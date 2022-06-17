@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG NODE_VERSION="lts"
+ARG BUILD_TYPE="dev"
 
 ###########################################################
 ## nextjs-dev
@@ -23,10 +24,10 @@ EXPOSE 9000
 CMD yarn run dev
 
 ###########################################################
-## nextjs - production
+## nextjs-prod - production
 ###########################################################
 
-FROM node:${NODE_VERSION}-alpine AS nextjs
+FROM node:${NODE_VERSION}-alpine AS nextjs-prod
 ENV HOME "/app"
 WORKDIR $HOME
 
@@ -40,3 +41,13 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn ins
 
 EXPOSE 9000
 CMD yarn dlx next start
+
+###########################################################
+## nextjs - flexible build: dev or production
+###########################################################
+
+FROM nextjs-${BUILD_TYPE} AS nextjs
+ENV HOME "/app"
+WORKDIR $HOME
+
+EXPOSE 9000
