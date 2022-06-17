@@ -24,6 +24,22 @@ EXPOSE 9000
 CMD yarn run dev
 
 ###########################################################
+## nextjs-builder - intermediate production builder
+###########################################################
+
+FROM nextjs-dev AS nextjs-builder
+ENV HOME "/app"
+WORKDIR $HOME
+
+# install the production dependencies
+RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --immutable
+# build the final output files
+RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run build
+RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run export
+
+CMD exit
+
+###########################################################
 ## nextjs-prod - production
 ###########################################################
 
@@ -31,16 +47,11 @@ FROM node:${NODE_VERSION}-alpine AS nextjs-prod
 ENV HOME "/app"
 WORKDIR $HOME
 
-# copy files needed for the install...
-COPY . $HOME
-RUN mkdir -p /cache/yarn
-# copy the dependencies
-COPY --from=nextjs-dev [ "$HOME/node_modules", "$HOME/node_modules/" ]
+# copy files needed for content output...
+COPY --from=nextjs-builder [ "$HOME/out", "$HOME/" ]
 # ensure everything is good
-RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --frozen-lockfile
 
 EXPOSE 9000
-CMD yarn dlx next start
 
 ###########################################################
 ## nextjs - flexible build: dev or production
