@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 9000",
     "build": "next build",
+    "export": "next export",
     "start": "next start -p 9000",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
