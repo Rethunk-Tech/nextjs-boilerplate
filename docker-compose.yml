@@ -1,18 +1,15 @@
 version: '3.1'
 services:
-  nextjs-dev:
-    build: .
-    restart: always
-    ports:
-      - 9000:9000
-    environment:
-      #NODE_VERSION: current
-      NODE_VERSION: lts
-      REPO_URL: 'https://github.com/Rethunk-Tech/nextjs-boilerplate.git'
-
   nextjs:
     #image: "nextjs-boilerplate:latest"
-    build: .
+    build:
+      context: .
+      target: nextjs
+      args:
+        BUILD_TYPE: prod
+        #BUILD_TYPE: dev
+        NODE_VERSION: lts
+        #NODE_VERSION: current
     restart: always
     ports:
       - 9000:9000
