@@ -53,6 +53,32 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run
 CMD exit
 
 ###########################################################
+## nextjs-prod-dynamic - production (dynamic)
+###########################################################
+
+FROM node:${NODE_VERSION} AS nextjs-prod-dynamic
+ENV HOME "/app"
+ENV NODE_ENV production
+WORKDIR $HOME
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=nextjs-builder "$HOME/public" "$HOME/public"
+COPY --from=nextjs-builder "$HOME/package.json" "$HOME/package.json"
+COPY --from=nextjs-builder "$HOME/yarn.lock" "$HOME/"
+COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/standalone" "$HOME/"
+COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/static" "$HOME/.next/static"
+
+USER nextjs
+
+EXPOSE 9000
+
+ENV PORT 9000
+
+CMD ["node", "server.js"]
+
+###########################################################
 ## nextjs-prod-static - production (static)
 ###########################################################
 
