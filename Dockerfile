@@ -23,8 +23,6 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn ins
 ###########################################################
 
 FROM nextjs-deps AS nextjs-dev
-ENV HOME "/app"
-WORKDIR $HOME
 
 # copy full repo now
 COPY . $HOME
@@ -37,8 +35,6 @@ CMD yarn run dev
 ###########################################################
 
 FROM nextjs-dev AS nextjs-builder
-ENV HOME "/app"
-WORKDIR $HOME
 
 # build a production server
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run build
