@@ -6,7 +6,7 @@ services:
       context: .
       target: nextjs
       args:
-        BUILD_TYPE: prod
+        BUILD_TYPE: prod-static
         #BUILD_TYPE: dev
         NODE_VERSION: lts
         #NODE_VERSION: current

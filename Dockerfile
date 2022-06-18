@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 ARG NODE_VERSION="lts"
 ARG HTTPD_VERSION="2.4"
-ARG BUILD_TYPE="dev"
+ARG BUILD_TYPE="dev-static"
 
 ###########################################################
 ## nextjs-deps
@@ -44,19 +44,19 @@ FROM nextjs-dev AS nextjs-builder
 ENV HOME "/app"
 WORKDIR $HOME
 
-# install the production dependencies
-RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --immutable
-# build the final output files
+# build a production server
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run build
+
+# build static HTML output files
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run export
 
 CMD exit
 
 ###########################################################
-## nextjs-prod - production
+## nextjs-prod-static - production (static)
 ###########################################################
 
-FROM httpd:${HTTPD_VERSION}-alpine AS nextjs-prod
+FROM httpd:${HTTPD_VERSION}-alpine AS nextjs-prod-static
 ENV HOME "/app"
 WORKDIR $HOME
 
