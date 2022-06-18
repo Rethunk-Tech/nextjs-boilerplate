@@ -22,16 +22,12 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn ins
 ## nextjs-dev
 ###########################################################
 
-FROM node:${NODE_VERSION} AS nextjs-dev
+FROM nextjs-deps AS nextjs-dev
 ENV HOME "/app"
 WORKDIR $HOME
 
 # copy full repo now
 COPY . $HOME
-
-# then local deps
-COPY --from=nextjs-deps "$HOME/node_modules/" "$HOME/node_modules/"
-COPY --from=nextjs-deps "$HOME/yarn.lock" "$HOME/"
 
 EXPOSE 9000
 CMD yarn run dev
@@ -49,8 +45,6 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run
 
 # build static HTML output files
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run export
-
-CMD exit
 
 ###########################################################
 ## nextjs-prod-dynamic - production (dynamic)
