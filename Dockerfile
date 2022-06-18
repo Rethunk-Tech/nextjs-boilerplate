@@ -50,6 +50,7 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run
 FROM node:${NODE_VERSION} AS nextjs-prod-dynamic
 ENV HOME "/app"
 ENV NODE_ENV production
+ENV PORT 9000
 WORKDIR $HOME
 
 RUN addgroup --system --gid 1001 nodejs
@@ -64,8 +65,6 @@ COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/static" "$HOME/.ne
 USER nextjs
 
 EXPOSE 9000
-
-ENV PORT 9000
 
 CMD ["node", "server.js"]
 
