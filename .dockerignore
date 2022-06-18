@@ -1,8 +1,10 @@
 # ignore git files everywhere
 **/.git/
 **/.gitattributes
+**/.github
 **/.gitignore
 **/.gitkeep
+**/README*
 
 # ignore other Docker files
 Dockerfile
