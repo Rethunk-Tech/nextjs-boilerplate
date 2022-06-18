@@ -13,13 +13,29 @@ This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with:
 
 ## Getting Started
 
+### Without Docker
+
 First, run the development server:
 
 ```bash
 yarn run dev -p 9000
 ```
 
+### With Docker
+
+1. Install [Docker Compose](https://docs.docker.com/compose/install/)
+
+1. Enable [BuildKit for Docker](https://docs.docker.com/develop/develop-images/build_enhancements/#to-enable-buildkit-builds). (It's faster and has cache.)
+
+1. Up the composition:
+
+    ```bash
+    docker-compose up -d --build
+    ```
+
 Open [http://localhost:9000](http://localhost:9000) with your browser to see the result.
+
+## Using this Boilerplate
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
