@@ -7,8 +7,8 @@ services:
       target: nextjs
       args:
         BUILD_TYPE: prod-dynamic
-        #BUILD_TYPE: dev
-        NODE_VERSION: lts-alpine
+        #BUILD_TYPE: prod-static
+        #NODE_VERSION: current-alpine
         #NODE_VERSION: current
         HTTPD_VERSION: 2.4
     restart: unless-stopped
