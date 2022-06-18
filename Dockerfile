@@ -4,10 +4,10 @@ ARG HTTPD_VERSION="2.4"
 ARG BUILD_TYPE="dev"
 
 ###########################################################
-## nextjs-dev
+## nextjs-deps
 ###########################################################
 
-FROM node:${NODE_VERSION} AS nextjs-dev
+FROM node:${NODE_VERSION} AS nextjs-deps
 ENV HOME "/app"
 WORKDIR $HOME
 
@@ -17,9 +17,21 @@ COPY [ ".yarnrc*", ".pinyarn.js", ".eslintrc.json", "package.json", "tsconfig.js
 RUN printf "\nenableGlobalCache: true\nglobalFolder: \"/cache/yarn\"\n" >> $HOME/.yarnrc.yml
 RUN mkdir -p /cache/yarn
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --immutable
+
+###########################################################
+## nextjs-dev
+###########################################################
+
+FROM node:${NODE_VERSION} AS nextjs-dev
+ENV HOME "/app"
+WORKDIR $HOME
+
 # copy full repo now
 COPY . $HOME
-RUN printf "\nenableGlobalCache: true\nglobalFolder: \"/cache/yarn\"\n" >> $HOME/.yarnrc.yml
+
+# then local deps
+COPY --from=nextjs-deps "$HOME/node_modules/" "$HOME/node_modules/"
+COPY --from=nextjs-deps "$HOME/yarn.lock" "$HOME/"
 
 EXPOSE 9000
 CMD yarn run dev
