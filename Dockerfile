@@ -56,11 +56,9 @@ WORKDIR $HOME
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=nextjs-builder "$HOME/public" "$HOME/public"
-COPY --from=nextjs-builder "$HOME/package.json" "$HOME/package.json"
-COPY --from=nextjs-builder "$HOME/yarn.lock" "$HOME/"
-COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/standalone" "$HOME/"
-COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/static" "$HOME/.next/static"
+COPY --from=nextjs-builder "$HOME/public" "$HOME/package.json" "$HOME/yarn.lock" ./
+COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/standalone" ./
+COPY --from=nextjs-builder --chown=nextjs:nodejs "$HOME/.next/static" ./.next/static
 
 USER nextjs
 
