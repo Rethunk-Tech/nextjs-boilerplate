@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-ARG NODE_VERSION="lts"
+ARG NODE_VERSION="lts-alpine"
 ARG HTTPD_VERSION="2.4"
 ARG BUILD_TYPE="dev-static"
 

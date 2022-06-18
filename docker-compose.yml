@@ -8,7 +8,7 @@ services:
       args:
         BUILD_TYPE: prod-static
         #BUILD_TYPE: dev
-        NODE_VERSION: lts
+        NODE_VERSION: lts-alpine
         #NODE_VERSION: current
         HTTPD_VERSION: 2.4
     restart: unless-stopped
