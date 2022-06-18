@@ -12,9 +12,9 @@ ENV HOME "/app"
 WORKDIR $HOME
 
 # copy files needed for the install...
-COPY .yarn/releases/ $HOME/.yarn/releases/
-COPY [ ".yarnrc*", ".pinyarn.js", ".eslintrc.json", "package.json", "tsconfig.json", "yarn.lock", "$HOME/" ]
-RUN printf "\nenableGlobalCache: true\nglobalFolder: \"/cache/yarn\"\n" >> $HOME/.yarnrc.yml
+COPY .yarn/releases/ ./.yarn/releases/
+COPY ".yarnrc*" .pinyarn.js .eslintrc.json package.json tsconfig.json yarn.lock .
+RUN printf "\nenableGlobalCache: true\nglobalFolder: \"/cache/yarn\"\n" >> ./.yarnrc.yml
 RUN mkdir -p /cache/yarn
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --immutable
 
@@ -25,9 +25,10 @@ RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn ins
 FROM nextjs-deps AS nextjs-dev
 
 # copy full repo now
-COPY . $HOME
+COPY . .
 
 EXPOSE 9000
+
 CMD yarn run dev
 
 ###########################################################
@@ -82,7 +83,7 @@ RUN ln -s "$HOME" /usr/local/apache2/htdocs
 RUN sed -ri 's~^(Listen) 80$~\1 9000~g' /usr/local/apache2/conf/httpd.conf
 
 # copy files needed for content output...
-COPY --from=nextjs-builder [ "$HOME/out", "$HOME/" ]
+COPY --from=nextjs-builder "$HOME/out" .
 
 # ensure everything is good
 RUN apachectl configtest
