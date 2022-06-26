@@ -15,7 +15,7 @@ This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with:
 
 ### Without Docker
 
-First, run the development server:
+Run the development server:
 
 ```bash
 yarn run dev -p 9000
@@ -30,10 +30,18 @@ yarn run dev -p 9000
 1. Up the composition:
 
     ```bash
-    docker-compose up -d --build
+    docker-compose up
     ```
 
 Open [http://localhost:9000](http://localhost:9000) with your browser to see the result.
+
+#### Debugging
+
+If you need to debug something inside the container, you can get a shell using:
+
+```bash
+docker-compose run --rm -u 0 nextjs sh
+```
 
 ## Using this Boilerplate
 
