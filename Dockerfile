@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 ARG NODE_VERSION="lts-alpine"
 ARG HTTPD_VERSION="2.4"
-ARG BUILD_TYPE="dev"
+ARG BUILD_ENV_TYPE="dev"
+ARG BUILD_TYPE="dynamic"
 
 ###########################################################
 ## nextjs-deps
@@ -19,10 +20,10 @@ RUN mkdir -p /cache/yarn
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn install --immutable
 
 ###########################################################
-## nextjs-dev
+## nextjs-dev-dynamic
 ###########################################################
 
-FROM nextjs-deps AS nextjs-dev
+FROM nextjs-deps AS nextjs-dev-dynamic
 
 # copy full repo now
 COPY . .
@@ -32,10 +33,21 @@ EXPOSE 9000
 CMD yarn run dev
 
 ###########################################################
+## nextjs-dev-static
+###########################################################
+
+FROM nextjs-deps AS nextjs-dev-static
+
+# error out invalid build type
+RUN echo "invalid BUILD_TYPE 'static' for BUILD_ENV_TYPE 'dev'" && exit 2
+
+CMD sleep
+
+###########################################################
 ## nextjs-builder - intermediate production builder
 ###########################################################
 
-FROM nextjs-dev AS nextjs-builder
+FROM nextjs-dev-dynamic AS nextjs-builder
 
 # build a production server
 RUN --mount=type=cache,target=/cache/yarn YARN_CACHE_FOLDER=/cache/yarn yarn run build
@@ -88,10 +100,10 @@ RUN apachectl configtest
 EXPOSE 9000
 
 ###########################################################
-## nextjs - flexible build: dev or production
+## nextjs - flexible build: dev-dynamic or production-{static,dynamic}
 ###########################################################
 
-FROM nextjs-${BUILD_TYPE} AS nextjs
+FROM nextjs-${BUILD_ENV_TYPE}-${BUILD_TYPE} AS nextjs
 ENV HOME "/app"
 WORKDIR $HOME
 
