@@ -6,9 +6,25 @@ services:
       context: .
       target: nextjs
       args:
-        BUILD_TYPE: prod
-        #BUILD_TYPE: dev
-        NODE_VERSION: lts
+
+        # @@ Environment passed to build and start, can be 'prod' or 'dev'
+        #
+        #     Most notably 'dev' enables hot-reloading and error reporting.
+        #         SEE: https://nextjs.org/docs/api-reference/cli#development
+        BUILD_ENV_TYPE: prod
+        # BUILD_ENV_TYPE: dev
+
+        # @@ Type of build to be performed, can be 'dynamic' or 'static'
+        #
+        #     'static' will output and host raw HTML and JS on an HTTP server,
+        #         NOTE: API routes are not available when building 'static'.
+        #
+        #     'dynamic' will start a full NodeJS server, serving API routes.
+        #         NOTE: Must be 'dynamic' to use BUILD_ENV_TYPE 'prod'
+        BUILD_TYPE: static
+        # BUILD_TYPE: dynamic
+
+        #NODE_VERSION: current-alpine
         #NODE_VERSION: current
         HTTPD_VERSION: 2.4
     restart: unless-stopped

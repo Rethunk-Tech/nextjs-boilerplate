@@ -13,13 +13,37 @@ This is an opinionated [Next.js](https://nextjs.org/) boilerplate, with:
 
 ## Getting Started
 
-First, run the development server:
+### Without Docker
+
+Run the development server:
 
 ```bash
 yarn run dev -p 9000
 ```
 
+### With Docker
+
+1. Install [Docker Compose](https://docs.docker.com/compose/install/)
+
+1. Enable [BuildKit for Docker](https://docs.docker.com/develop/develop-images/build_enhancements/#to-enable-buildkit-builds). (It's faster and has cache.)
+
+1. Up the composition:
+
+    ```bash
+    docker-compose up
+    ```
+
 Open [http://localhost:9000](http://localhost:9000) with your browser to see the result.
+
+#### Debugging
+
+If you need to debug something inside the container, you can get a shell using:
+
+```bash
+docker-compose run --rm -u 0 nextjs sh
+```
+
+## Using this Boilerplate
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
