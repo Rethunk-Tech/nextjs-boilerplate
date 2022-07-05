@@ -1990,9 +1990,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "cypress@npm:10.2.0"
+"cypress@npm:^10.3.0":
+  version: 10.3.0
+  resolution: "cypress@npm:10.3.0"
   dependencies:
     "@cypress/request": "npm:^2.88.10"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -2038,7 +2038,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: e33e76d82e0aa3717a40da51694e3adbd01d9cac1e05db6eb4a364004740a71646489d337198c60d9239afd59a329453a32a550f287a9a3c96fd103dea1113a9
+  checksum: b2e1ab353bc048f60db37987e75bb7fa5991ddfa42d372b0d2b602450cd2dc7e1b4639e4f1ef4ae35f3559fbf89ca6c2d4e5e0b3443ff6da14e15207bdb01e55
   languageName: node
   linkType: hard
 
@@ -5111,7 +5111,7 @@ __metadata:
     "@types/react-dom": "npm:^18.0.5"
     "@typescript-eslint/eslint-plugin": "npm:^5.30.5"
     "@typescript-eslint/parser": "npm:^5.30.5"
-    cypress: "npm:^10.2.0"
+    cypress: "npm:^10.3.0"
     eslint: "npm:^8.19.0"
     eslint-config-next: "npm:^12.2.0"
     eslint-plugin-react: "npm:^7.30.1"
