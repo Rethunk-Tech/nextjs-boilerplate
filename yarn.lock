@@ -833,7 +833,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:12.1.6, @next/eslint-plugin-next@npm:^12.1.6":
+"@next/eslint-plugin-next@npm:12.2.0":
+  version: 12.2.0
+  resolution: "@next/eslint-plugin-next@npm:12.2.0"
+  dependencies:
+    glob: "npm:7.1.7"
+  checksum: 731cae73b91685c6e756574ce73aef9684745c60634a35fa25cbb435bbfc0bf5e922e2dee0b7476f4371f58f90b3a42105e9877ee3e0d58ea9d4130e4e464d52
+  languageName: node
+  linkType: hard
+
+"@next/eslint-plugin-next@npm:^12.1.6":
   version: 12.1.6
   resolution: "@next/eslint-plugin-next@npm:12.1.6"
   dependencies:
@@ -2333,11 +2342,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^12.1.6":
-  version: 12.1.6
-  resolution: "eslint-config-next@npm:12.1.6"
+"eslint-config-next@npm:^12.2.0":
+  version: 12.2.0
+  resolution: "eslint-config-next@npm:12.2.0"
   dependencies:
-    "@next/eslint-plugin-next": "npm:12.1.6"
+    "@next/eslint-plugin-next": "npm:12.2.0"
     "@rushstack/eslint-patch": "npm:^1.1.3"
     "@typescript-eslint/parser": "npm:^5.21.0"
     eslint-import-resolver-node: "npm:^0.3.6"
@@ -2348,12 +2357,11 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.5.0"
   peerDependencies:
     eslint: ^7.23.0 || ^8.0.0
-    next: ">=10.2.0"
     typescript: ">=3.3.1"
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a235d38d116e116f7c2dfad642d43d939b3054020749d80a2313eb1dda6ca359a2af0c141698e0b18dc5d433194265cc4c837101549386171ff4d51e79e4b5ec
+  checksum: dce9e4e6c36c6862a497309eacf469aade57a52d5f3a4572d831d91f1f485cf0f0110a8092f39b601303679d64090d2b60541d29bc4226f36ea44ef2a4e0caf1
   languageName: node
   linkType: hard
 
@@ -5105,7 +5113,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^5.29.0"
     cypress: "npm:^10.2.0"
     eslint: "npm:^8.19.0"
-    eslint-config-next: "npm:^12.1.6"
+    eslint-config-next: "npm:^12.2.0"
     eslint-plugin-react: "npm:^7.30.1"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-typescript-sort-keys: "npm:^2.1.0"
