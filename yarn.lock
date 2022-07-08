@@ -1006,10 +1006,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.0.1":
-  version: 18.0.1
-  resolution: "@types/node@npm:18.0.1"
-  checksum: c937f8fc6826f6fae7117b4b02b93caa06338e20325a469bd525e5c393592f4d0607f33ec33820c6d655eb00c1d0abffff74d8913b37a3fc72f5d6cc342df4d8
+"@types/node@npm:^18.0.3":
+  version: 18.0.3
+  resolution: "@types/node@npm:18.0.3"
+  checksum: 2b50e8bd0208dc099424eb1192415b76a6530b24bf7d28344f4be8f59ad1c45bd8788db15ef6e67873bd9e499f2ff235c698f33c5a6d1465012e620580085064
   languageName: node
   linkType: hard
 
@@ -5090,7 +5090,7 @@ __metadata:
     "@mui/icons-material": "npm:^5.8.4"
     "@mui/material": "npm:^5.8.7"
     "@next/eslint-plugin-next": "npm:^12.2.0"
-    "@types/node": "npm:^18.0.1"
+    "@types/node": "npm:^18.0.3"
     "@types/react": "npm:^18.0.14"
     "@types/react-dom": "npm:^18.0.6"
     "@typescript-eslint/eslint-plugin": "npm:^5.30.5"
