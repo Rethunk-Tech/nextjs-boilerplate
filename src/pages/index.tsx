@@ -1,5 +1,6 @@
-import { HomeRounded } from '@mui/icons-material'
-import { Container, Typography } from '@mui/material'
+import HomeRounded from '@mui/icons-material/HomeRounded'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
