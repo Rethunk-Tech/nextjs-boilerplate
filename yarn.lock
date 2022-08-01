@@ -398,6 +398,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/cache@npm:^11.10.0":
+  version: 11.10.0
+  resolution: "@emotion/cache@npm:11.10.0"
+  dependencies:
+    "@emotion/memoize": "npm:^0.8.0"
+    "@emotion/sheet": "npm:^1.2.0"
+    "@emotion/utils": "npm:^1.2.0"
+    "@emotion/weak-memoize": "npm:^0.3.0"
+    stylis: "npm:4.0.13"
+  checksum: baadb6f3f26e6287edbbb01ea436caf13650a2e466f8f83bcc07b659250070843e163f941035388cf343b4e84c7930ce358b1cb767bfd6809f2814c7279ca95d
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^11.9.3":
   version: 11.9.3
   resolution: "@emotion/cache@npm:11.9.3"
@@ -431,6 +444,13 @@ __metadata:
   version: 0.7.5
   resolution: "@emotion/memoize@npm:0.7.5"
   checksum: da7b8c95e9e18f2f7a642aa4401a88f209d144df902c7a634694f7f844e5d47686a48f03299b857c4b305ccabadecf6ba5ce17a5d7c9af555f192d9a3d7fa96e
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "@emotion/memoize@npm:0.8.0"
+  checksum: f6814c7588ff86f60818cfc08514d210d65651ba54ac306f9fdb66126f3f53ef4d895404822a42b36d0af771c842151c7a12bf855f23d40f46392aa55d14c9c1
   languageName: node
   linkType: hard
 
@@ -507,6 +527,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/sheet@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@emotion/sheet@npm:1.2.0"
+  checksum: cd1fcf79aa41d420ab83b2feb7a1d4ac5c44159fff6b19af3bd187c7065bfbf36e74e488e73f4e6b4c70cc0e48ab390a7cf3cc3671721f0436826d36122a459f
+  languageName: node
+  linkType: hard
+
 "@emotion/styled@npm:^11.9.3":
   version: 11.9.3
   resolution: "@emotion/styled@npm:11.9.3"
@@ -543,10 +570,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/utils@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@emotion/utils@npm:1.2.0"
+  checksum: a4d6eac30b641e01393f90fde80ebdafefbef5f86f44d002dc9190b313120c1a5e62be9eb8c8f84e37015fa6b505e9a4083393ede3158c0babf87c75f5e753ba
+  languageName: node
+  linkType: hard
+
 "@emotion/weak-memoize@npm:^0.2.5":
   version: 0.2.5
   resolution: "@emotion/weak-memoize@npm:0.2.5"
   checksum: 669036453733b1a41f82cf1b8dcbd97f765cffa627a7a2514c2d0a009a0f999300a2a8c256f4358c0d99e7f3f9d36bf876e38e32ac4a333d15f021d945271a21
+  languageName: node
+  linkType: hard
+
+"@emotion/weak-memoize@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@emotion/weak-memoize@npm:0.3.0"
+  checksum: a54c661998fa78cf05db8dfd33b8e06512356e908954542665e1e487e7901724c6a10816ae714db02471d1c5715b980aecbceee32d92fc4c957e6909ee2f8ed8
   languageName: node
   linkType: hard
 
@@ -5102,7 +5143,7 @@ __metadata:
   resolution: "ui-builder-react@workspace:."
   dependencies:
     "@babel/core": "npm:^7.18.9"
-    "@emotion/cache": "npm:^11.9.3"
+    "@emotion/cache": "npm:^11.10.0"
     "@emotion/react": "npm:^11.9.3"
     "@emotion/server": "npm:^11.4.0"
     "@emotion/styled": "npm:^11.9.3"
