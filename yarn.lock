@@ -411,6 +411,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/cache@npm:^11.10.1":
+  version: 11.10.1
+  resolution: "@emotion/cache@npm:11.10.1"
+  dependencies:
+    "@emotion/memoize": "npm:^0.8.0"
+    "@emotion/sheet": "npm:^1.2.0"
+    "@emotion/utils": "npm:^1.2.0"
+    "@emotion/weak-memoize": "npm:^0.3.0"
+    stylis: "npm:4.0.13"
+  checksum: 18d2b0ef7c4a37ca77489205d35a1f9ebd9230e724e7f71a3f91253ed19c4c419dc029c4f186c2d748700d5b93feeaa989596e5ba7d3e7071ed39747b844111d
+  languageName: node
+  linkType: hard
+
 "@emotion/cache@npm:^11.9.3":
   version: 11.9.3
   resolution: "@emotion/cache@npm:11.9.3"
@@ -5247,7 +5260,7 @@ __metadata:
   resolution: "ui-builder-react@workspace:."
   dependencies:
     "@babel/core": "npm:^7.18.9"
-    "@emotion/cache": "npm:^11.10.0"
+    "@emotion/cache": "npm:^11.10.1"
     "@emotion/react": "npm:^11.10.0"
     "@emotion/server": "npm:^11.10.0"
     "@emotion/styled": "npm:^11.10.0"
