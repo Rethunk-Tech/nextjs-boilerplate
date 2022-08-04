@@ -12,7 +12,7 @@ import { AnchorHTMLAttributes, forwardRef } from 'react'
 const Anchor = styled('a')({})
 
 interface NextLinkComposedProps
-  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'onClick' | 'onMouseEnter'>,
+  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'onClick' | 'onMouseEnter' | 'onTouchStart'>,
     Omit<NextLinkProps, 'href' | 'as'> {
   href?: NextLinkProps['href']
   linkAs?: NextLinkProps['as']
