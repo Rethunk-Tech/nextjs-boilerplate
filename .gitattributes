@@ -1,0 +1,24 @@
+* text=auto
+
+## Text
+*.md text eol=lf
+*.txt text eol=lf
+
+## Config
+*.json text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf
+
+## JavaScript
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+
+## Stylesheets
+*.css text eol=lf
+*.scss text eol=lf
+*.less text eol=lf
+*.sass text eol=lf
+
+
