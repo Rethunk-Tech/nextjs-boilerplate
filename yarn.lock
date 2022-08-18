@@ -873,27 +873,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/styled-engine@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "@mui/styled-engine@npm:5.10.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.17.2"
-    "@emotion/cache": "npm:^11.9.3"
-    csstype: "npm:^3.1.0"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-  checksum: 4582fbc9d70401b6270c4d573e0434ae07eeb8ea02545828f8a92002d4ec580756153281009463c69b849e448262be3df4b385956fcc1665576134c0b6aa1c77
-  languageName: node
-  linkType: hard
-
 "@mui/styled-engine@npm:^5.10.1":
   version: 5.10.1
   resolution: "@mui/styled-engine@npm:5.10.1"
@@ -912,34 +891,6 @@ __metadata:
     "@emotion/styled":
       optional: true
   checksum: 90d575eea291ba99247da81b4c25328d8cf92a40cae2152db2e478e0df06b4d65550352da0e672c1c80a38288049ff3c1d185a63fa2cbcc47c1a72ea597b00bf
-  languageName: node
-  linkType: hard
-
-"@mui/system@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "@mui/system@npm:5.10.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.17.2"
-    "@mui/private-theming": "npm:^5.9.3"
-    "@mui/styled-engine": "npm:^5.10.0"
-    "@mui/types": "npm:^7.1.5"
-    "@mui/utils": "npm:^5.9.3"
-    clsx: "npm:^1.2.1"
-    csstype: "npm:^3.1.0"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@emotion/react": ^11.5.0
-    "@emotion/styled": ^11.3.0
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: f40c2e409f6019bf4110a8daa5b1507d99d813db57d7f37c785dbcd29bdc9ed81ad09b17874ed680728b8bb68db39e7e6d7562c7fda7a32fade0efc3f4321bcf
   languageName: node
   linkType: hard
 
@@ -5390,7 +5341,7 @@ __metadata:
     "@emotion/styled": "npm:^11.10.0"
     "@mui/icons-material": "npm:^5.8.4"
     "@mui/material": "npm:^5.10.1"
-    "@mui/system": "npm:^5.10.0"
+    "@mui/system": "npm:^5.10.1"
     "@next/eslint-plugin-next": "npm:^12.2.5"
     "@types/node": "npm:^18.7.6"
     "@types/react": "npm:^18.0.17"
