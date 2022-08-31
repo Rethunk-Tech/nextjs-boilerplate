@@ -2607,9 +2607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.30.1":
-  version: 7.30.1
-  resolution: "eslint-plugin-react@npm:7.30.1"
+"eslint-plugin-react@npm:^7.31.1":
+  version: 7.31.1
+  resolution: "eslint-plugin-react@npm:7.31.1"
   dependencies:
     array-includes: "npm:^3.1.5"
     array.prototype.flatmap: "npm:^1.3.0"
@@ -2627,7 +2627,7 @@ __metadata:
     string.prototype.matchall: "npm:^4.0.7"
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-  checksum: 5e3e08b418d7fad73a48688350a6877ff73e20f05652253a903bc7341d15f7a51b4dc47dfc1e2dd0c3fb834b3c3ecad1d9f99cfde45bec0da41a5e95e6dd05c0
+  checksum: 5510a899c807d8ed348fefd17c1308bc0651b4e8aec63c63f014637de24a8c8b07a5d49e11df3a187f71372c8fb11f2f6900779ee16edd114847b160f15dc29d
   languageName: node
   linkType: hard
 
@@ -5320,7 +5320,7 @@ __metadata:
     cypress: "npm:^10.6.0"
     eslint: "npm:^8.23.0"
     eslint-config-next: "npm:^12.2.5"
-    eslint-plugin-react: "npm:^7.30.1"
+    eslint-plugin-react: "npm:^7.31.1"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-typescript-sort-keys: "npm:^2.1.0"
     next: "npm:^12.2.5"
