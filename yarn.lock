@@ -5279,23 +5279,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.7.4":
-  version: 4.7.4
-  resolution: "typescript@npm:4.7.4"
+"typescript@npm:^4.8.2":
+  version: 4.8.2
+  resolution: "typescript@npm:4.8.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 0cec8f1c0fb0c6a9b437ee4e17819510eb294aad85291e940188fc4542a5554ffe1f73e4bc396c77d0a4d7dd1c17fd795634d50938fc3558e34f32d8a682118b
+  checksum: 67ffddd3d17e9f998a184925725222bfb63aab9d786542879006cff335e897c3a386b9ee564c0a5dc65e5b97cd3c66914096b1b60b9e418171cde2894cc994a8
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.7.4#optional!builtin<compat/typescript>":
-  version: 4.7.4
-  resolution: "typescript@patch:typescript@npm%3A4.7.4#optional!builtin<compat/typescript>::version=4.7.4&hash=7ad353"
+"typescript@patch:typescript@npm%3A^4.8.2#optional!builtin<compat/typescript>":
+  version: 4.8.2
+  resolution: "typescript@patch:typescript@npm%3A4.8.2#optional!builtin<compat/typescript>::version=4.8.2&hash=7ad353"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 19bcd9153bbacaabed753b39fbd6adb5417690230b07db63f02e22588865b444b7504da9b9fcdcca5b4ac34be19904271a266bfa54d75fcfb0f5d699cb1e2314
+  checksum: d632bd295ff5b56038e321adc47aff7b606ef25d6b0b19dd43dbd18f761f349e89f95fe1f567d0876417ccdbeb36daf5fb9dff2e32a34e404acea274b0b7c076
   languageName: node
   linkType: hard
 
@@ -5327,7 +5327,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     start-server-and-test: "npm:^1.14.0"
-    typescript: "npm:^4.7.4"
+    typescript: "npm:^4.8.2"
   languageName: unknown
   linkType: soft
 
