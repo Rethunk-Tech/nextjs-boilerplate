@@ -547,14 +547,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.10.0":
-  version: 11.10.0
-  resolution: "@emotion/react@npm:11.10.0"
+"@emotion/react@npm:^11.10.4":
+  version: 11.10.4
+  resolution: "@emotion/react@npm:11.10.4"
   dependencies:
     "@babel/runtime": "npm:^7.18.3"
     "@emotion/babel-plugin": "npm:^11.10.0"
     "@emotion/cache": "npm:^11.10.0"
     "@emotion/serialize": "npm:^1.1.0"
+    "@emotion/use-insertion-effect-with-fallbacks": "npm:^1.0.0"
     "@emotion/utils": "npm:^1.2.0"
     "@emotion/weak-memoize": "npm:^0.3.0"
     hoist-non-react-statics: "npm:^3.3.1"
@@ -566,7 +567,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: a2cb4d3b85322ebdb587ed01a38d22fb3dc92b240e7b21b90363d8ca8ee7c76642de85c29d792e7cd09f141c6fe33598886b3c829b9f5173caae88d39f6e0aac
+  checksum: 514efc936c059cf4c32a518ef04f9a021c69cd516c045b314e0f9d1fea3d00bf203f7d800241ba315dd4f4d9a32a4bc85b76d7a711a6a0c634924165660a3396
   languageName: node
   linkType: hard
 
@@ -5329,7 +5330,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.18.13"
     "@emotion/cache": "npm:^11.10.3"
-    "@emotion/react": "npm:^11.10.0"
+    "@emotion/react": "npm:^11.10.4"
     "@emotion/server": "npm:^11.10.0"
     "@emotion/styled": "npm:^11.10.4"
     "@mui/icons-material": "npm:^5.10.2"
