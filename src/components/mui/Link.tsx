@@ -26,6 +26,7 @@ export const NextLinkComposed = forwardRef<
   const {
     to,
     linkAs,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     href,
     replace,
     scroll,
