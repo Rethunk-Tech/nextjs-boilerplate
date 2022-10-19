@@ -872,6 +872,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mui/system@npm:^5.10.10":
+  version: 5.10.10
+  resolution: "@mui/system@npm:5.10.10"
+  dependencies:
+    "@babel/runtime": "npm:^7.19.0"
+    "@mui/private-theming": "npm:^5.10.9"
+    "@mui/styled-engine": "npm:^5.10.8"
+    "@mui/types": "npm:^7.2.0"
+    "@mui/utils": "npm:^5.10.9"
+    clsx: "npm:^1.2.1"
+    csstype: "npm:^3.1.1"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    "@emotion/react": ^11.5.0
+    "@emotion/styled": ^11.3.0
+    "@types/react": ^17.0.0 || ^18.0.0
+    react: ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/react":
+      optional: true
+    "@emotion/styled":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 1e3623fc3a1040921e37f463d9adfa78ee54fb17de0dd09bdad47b50d5f55e734478514acea0132b4d26754cd7217fbceefd0f4890ceb88a3a0f34ec06cc3b3e
+  languageName: node
+  linkType: hard
+
 "@mui/system@npm:^5.10.9":
   version: 5.10.9
   resolution: "@mui/system@npm:5.10.9"
@@ -5295,7 +5323,7 @@ __metadata:
     "@emotion/styled": "npm:^11.10.4"
     "@mui/icons-material": "npm:^5.10.9"
     "@mui/material": "npm:^5.10.9"
-    "@mui/system": "npm:^5.10.9"
+    "@mui/system": "npm:^5.10.10"
     "@next/eslint-plugin-next": "npm:^12.3.1"
     "@types/node": "npm:^18.11.0"
     "@types/react": "npm:^18.0.21"
