@@ -1157,11 +1157,11 @@ __metadata:
   linkType: hard
 
 "@types/react-dom@npm:^18.0.6":
-  version: 18.0.6
-  resolution: "@types/react-dom@npm:18.0.6"
+  version: 18.0.7
+  resolution: "@types/react-dom@npm:18.0.7"
   dependencies:
     "@types/react": "npm:*"
-  checksum: aa49049d928c14bb0268bc7acca2ff5101d9191c73fcb748c0d8a546638bc8d2ce86b32ae57260b72ce5fe4bf2c64775208cf528db1e394768ed5755e261890a
+  checksum: d42a0d895fcf0a0eb649428a313543a73765013280dd1999fe97e236652bdd1ee778b1d57247ae6661397db70e9c7289b72147741fe2ce5ab9db3e82060e45d9
   languageName: node
   linkType: hard
 
