@@ -19,7 +19,7 @@
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.0",
+    "@mui/material": "^5.11.3",
     "@mui/system": "^5.11.0",
     "next": "^13.0.7",
     "react": "^18.2.0",
