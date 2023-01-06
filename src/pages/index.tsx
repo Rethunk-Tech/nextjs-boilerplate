@@ -75,7 +75,7 @@ const Home: NextPage = (): JSX.Element => {
           </Link>!
         </Typography>
 
-        <Typography component="p" sx={styles.typography} variant="h4">
+        <Typography component="h4" sx={styles.typography} variant="h4">
           Get started by editing <code>pages/index.tsx</code>
         </Typography>
       </Box>

@@ -8,8 +8,8 @@ describe('Index', () => {
     // Start from the index page
     cy.visit('/')
 
-    // The page should contain an h1 with "Welcome to Next.js!"
-    cy.get('h1').contains('Welcome to Next.js!')
+    // The page should contain an h4 with start instructions
+    cy.get('h4').contains('Get started by editing pages/index.tsx')
   })
 })
 
