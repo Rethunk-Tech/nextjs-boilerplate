@@ -1278,7 +1278,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.42.0, @typescript-eslint/parser@npm:^5.46.1":
+"@typescript-eslint/parser@npm:^5.42.0":
   version: 5.46.1
   resolution: "@typescript-eslint/parser@npm:5.46.1"
   dependencies:
@@ -1292,6 +1292,23 @@ __metadata:
     typescript:
       optional: true
   checksum: 2b2d2638e4c65823535ecc5eac31f7884e2360340aa0465ae0863e59bea84d48c3d8427323a94f5b201eccfee2ce8248051750eef34590119eb2ac46170317cb
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^5.48.0":
+  version: 5.48.0
+  resolution: "@typescript-eslint/parser@npm:5.48.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": "npm:5.48.0"
+    "@typescript-eslint/types": "npm:5.48.0"
+    "@typescript-eslint/typescript-estree": "npm:5.48.0"
+    debug: "npm:^4.3.4"
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: d83f802fd71a115b1450712471aec700d0f2f6de3e35ca269efeea0539b87225b329979815a4f2c0114f738015314bbcf304c8d736fc732d05d3cacfda14a8e3
   languageName: node
   linkType: hard
 
@@ -5673,7 +5690,7 @@ __metadata:
     "@types/react": "npm:^18.0.26"
     "@types/react-dom": "npm:^18.0.10"
     "@typescript-eslint/eslint-plugin": "npm:^5.48.0"
-    "@typescript-eslint/parser": "npm:^5.46.1"
+    "@typescript-eslint/parser": "npm:^5.48.0"
     cypress: "npm:^12.1.0"
     eslint: "npm:^8.31.0"
     eslint-config-next: "npm:^13.1.1"
