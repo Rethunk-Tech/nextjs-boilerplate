@@ -922,12 +922,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.1.1, @next/eslint-plugin-next@npm:^13.1.1":
+"@next/eslint-plugin-next@npm:13.1.1":
   version: 13.1.1
   resolution: "@next/eslint-plugin-next@npm:13.1.1"
   dependencies:
     glob: "npm:7.1.7"
   checksum: a0149b59d8999241de294428e7dbfd6f60dea5a7b8a8d39242a387549461a7a8c3b7e7540dfbb6064746313024126e4d48b61a2c5afaeefd9c24912635d6d9b3
+  languageName: node
+  linkType: hard
+
+"@next/eslint-plugin-next@npm:^13.1.1":
+  version: 13.1.2
+  resolution: "@next/eslint-plugin-next@npm:13.1.2"
+  dependencies:
+    glob: "npm:7.1.7"
+  checksum: e43c5d199e2b7658d5e1154254bbfd3a2a34bc49d20bba7f8873773d9d98b14d15bf642695642579e85917291bb408e419f4d3e82e412a541547fda3e9d8a1f7
   languageName: node
   linkType: hard
 
