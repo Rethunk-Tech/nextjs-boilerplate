@@ -5282,9 +5282,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:^1.15.3":
-  version: 1.15.3
-  resolution: "start-server-and-test@npm:1.15.3"
+"start-server-and-test@npm:^1.15.4":
+  version: 1.15.4
+  resolution: "start-server-and-test@npm:1.15.4"
   dependencies:
     arg: "npm:^5.0.2"
     bluebird: "npm:3.7.2"
@@ -5298,7 +5298,7 @@ __metadata:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 1c77e939b80ce7b9f48326b0958905ad0fefa3b3240d53f02d1dfad252e554917ebde01605ff92d9189f9e5f682c865f4f071ca648bd3de2a1f3d2d4f96d377b
+  checksum: 7e4dda6b6852e03436205ea99f723f78a33319932195dd7cac9b97aff566ba46dc785be2559dffd65dee63246d22a5415922cdee9263bd6255b758e7d127f331
   languageName: node
   linkType: hard
 
@@ -5737,7 +5737,7 @@ __metadata:
     next: "npm:^13.1.6"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    start-server-and-test: "npm:^1.15.3"
+    start-server-and-test: "npm:^1.15.4"
     typescript: "npm:^4.9.5"
   languageName: unknown
   linkType: soft
