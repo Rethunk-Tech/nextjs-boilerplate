@@ -273,15 +273,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.13":
-  version: 7.20.13
-  resolution: "@babel/runtime@npm:7.20.13"
-  dependencies:
-    regenerator-runtime: "npm:^0.13.11"
-  checksum: 0e09b4915318248aeeccdf6dc6a8ccdeedbe4b7187fa4159eaa569c4a407c36f3b8689296296b25246671987efe2253dd6e3bab63a40deedcdbd49b8845204e6
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.21.0":
   version: 7.21.0
   resolution: "@babel/runtime@npm:7.21.0"
@@ -750,11 +741,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.11.9":
-  version: 5.11.9
-  resolution: "@mui/icons-material@npm:5.11.9"
+"@mui/icons-material@npm:^5.11.11":
+  version: 5.11.11
+  resolution: "@mui/icons-material@npm:5.11.11"
   dependencies:
-    "@babel/runtime": "npm:^7.20.13"
+    "@babel/runtime": "npm:^7.21.0"
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^17.0.0 || ^18.0.0
@@ -762,7 +753,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 759504f244b01bf0a447791b411f70533a378e742a197a8eb2eb893fca3103a408e38213784601f6ffc97ae3a50523593d79c6a601f6aa026e59d000dfc6e493
+  checksum: 5aae14a311366773a2553595c5a7cf7ba7bc15d8be940d7b4a495d8aa1c5cc13080f2a798d422f4b5bf3a43507cac9519dca4e453c60955620e9f7ca29d60eac
   languageName: node
   linkType: hard
 
@@ -5709,7 +5700,7 @@ __metadata:
     "@emotion/react": "npm:^11.10.6"
     "@emotion/server": "npm:^11.10.0"
     "@emotion/styled": "npm:^11.10.6"
-    "@mui/icons-material": "npm:^5.11.9"
+    "@mui/icons-material": "npm:^5.11.11"
     "@mui/material": "npm:^5.11.11"
     "@mui/system": "npm:^5.11.11"
     "@next/eslint-plugin-next": "npm:^13.2.1"
