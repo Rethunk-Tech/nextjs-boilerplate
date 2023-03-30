@@ -1232,14 +1232,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.29":
-  version: 18.0.29
-  resolution: "@types/react@npm:18.0.29"
+"@types/react@npm:^18.0.31":
+  version: 18.0.31
+  resolution: "@types/react@npm:18.0.31"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 09c4972ec3bcfc94d67dabd034db85136292e22ff686834fe08ead61182c019f01d87b167df5307dfd82b12eaebcf597888ac50a1363b2388b6617c1ae363eab
+  checksum: 566a40c89bf50695e8feba6188e5bc390db2895a9d9cc05e3285a9365d13e3abe695c25947758955bea21b94ce112bafb0c21d9c6e9240bea801de070bf29d59
   languageName: node
   linkType: hard
 
@@ -5766,7 +5766,7 @@ __metadata:
     "@mui/system": "npm:^5.11.15"
     "@next/eslint-plugin-next": "npm:^13.2.4"
     "@types/node": "npm:^18.15.11"
-    "@types/react": "npm:^18.0.29"
+    "@types/react": "npm:^18.0.31"
     "@types/react-dom": "npm:^18.0.11"
     "@typescript-eslint/eslint-plugin": "npm:^5.56.0"
     "@typescript-eslint/parser": "npm:^5.56.0"
