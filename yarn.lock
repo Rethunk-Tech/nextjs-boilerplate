@@ -884,13 +884,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/styled-engine@npm:^5.11.11":
-  version: 5.11.11
-  resolution: "@mui/styled-engine@npm:5.11.11"
+"@mui/styled-engine@npm:^5.11.16":
+  version: 5.11.16
+  resolution: "@mui/styled-engine@npm:5.11.16"
   dependencies:
     "@babel/runtime": "npm:^7.21.0"
     "@emotion/cache": "npm:^11.10.5"
-    csstype: "npm:^3.1.1"
+    csstype: "npm:^3.1.2"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     "@emotion/react": ^11.4.1
@@ -901,21 +901,21 @@ __metadata:
       optional: true
     "@emotion/styled":
       optional: true
-  checksum: a4e3408749e6f7069962b98fd6912f3e6c85587c14d578bcc381cafdb681faa7af05a644d4ce6dbcaaa0c3388745a1b83f9542ecafb037c2984ddf2d91fc1b47
+  checksum: d28876c2752ce3b76efe3ac2c167c59e4fcdcc8fc0aae6374870db258e68c0f9db346c250116391268b89d0d4123e989664c4c32afefd2e45249514edffd6f2c
   languageName: node
   linkType: hard
 
 "@mui/system@npm:^5.11.15":
-  version: 5.11.15
-  resolution: "@mui/system@npm:5.11.15"
+  version: 5.11.16
+  resolution: "@mui/system@npm:5.11.16"
   dependencies:
     "@babel/runtime": "npm:^7.21.0"
     "@mui/private-theming": "npm:^5.11.13"
-    "@mui/styled-engine": "npm:^5.11.11"
+    "@mui/styled-engine": "npm:^5.11.16"
     "@mui/types": "npm:^7.2.3"
     "@mui/utils": "npm:^5.11.13"
     clsx: "npm:^1.2.1"
-    csstype: "npm:^3.1.1"
+    csstype: "npm:^3.1.2"
     prop-types: "npm:^15.8.1"
   peerDependencies:
     "@emotion/react": ^11.5.0
@@ -929,7 +929,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 8dd447cc52931f68306dcdea2eea6934c4e9e714571af6f679ce7db41e791b46c9a69afb36180d44ef0f040c3f0d674b39f7801e7cfca2f99cc4c04f5b6d226c
+  checksum: 3edb017c917c6aac490ae4124a157862f56ad28e1a0f8fc4e78ae81ba42607e4caa1e650aea46d84e1f293bf93b3d8bb435ee6897a087a07ce4e0798457034e8
   languageName: node
   linkType: hard
 
@@ -2212,6 +2212,13 @@ __metadata:
   version: 3.1.1
   resolution: "csstype@npm:3.1.1"
   checksum: 39c4533f337cad38b9574a24b4b94bb203f091882295b6b4fb27e9e2b17148b188847f5fb728796af60bd0b80c502d510f89fe7ada3b661eaa6bca758c902036
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "csstype@npm:3.1.2"
+  checksum: 9f4357df50023d227d535beb807ccf8e6d8ad6b639afe375898214ebde729aa275731a19d9bcbf01444a6904008cc0d47fbbefa5fa5fc59d7d40e3595d0d41ae
   languageName: node
   linkType: hard
 
