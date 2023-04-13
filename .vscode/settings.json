@@ -1,9 +1,12 @@
 {
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
   },
   "eslint.validate": [
     "javascript",
