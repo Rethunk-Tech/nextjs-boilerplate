@@ -5760,6 +5760,7 @@ __metadata:
     "@emotion/react": "npm:^11.10.6"
     "@emotion/server": "npm:^11.10.0"
     "@emotion/styled": "npm:^11.10.6"
+    "@emotion/utils": "npm:^1.2.0"
     "@mui/icons-material": "npm:^5.11.16"
     "@mui/material": "npm:^5.12.0"
     "@mui/system": "npm:^5.12.0"
