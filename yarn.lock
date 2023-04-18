@@ -2113,10 +2113,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "commander@npm:5.1.0"
-  checksum: 121debda8eeb53f3282c6a1d7995027a88ad4c22f9bd31b27a1350d483fc90dabd6dbf613782921b646e68a20ab45ed82adc3b594dbd42b60345e08059f338e4
+"commander@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "commander@npm:6.2.1"
+  checksum: c52b3cba040d015dc2788bed08041dd2e4734bc79b4ac0e1829544fa09e0844b746b956e9f5f87dee4f62870ab63239f22e2e2d30b242eef392df1501dee319d
   languageName: node
   linkType: hard
 
@@ -2203,8 +2203,8 @@ __metadata:
   linkType: hard
 
 "cypress@npm:^12.9.0":
-  version: 12.9.0
-  resolution: "cypress@npm:12.9.0"
+  version: 12.10.0
+  resolution: "cypress@npm:12.10.0"
   dependencies:
     "@cypress/request": "npm:^2.88.10"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -2220,7 +2220,7 @@ __metadata:
     check-more-types: "npm:^2.24.0"
     cli-cursor: "npm:^3.1.0"
     cli-table3: "npm:~0.6.1"
-    commander: "npm:^5.1.0"
+    commander: "npm:^6.2.1"
     common-tags: "npm:^1.8.0"
     dayjs: "npm:^1.10.4"
     debug: "npm:^4.3.4"
@@ -2238,7 +2238,7 @@ __metadata:
     listr2: "npm:^3.8.3"
     lodash: "npm:^4.17.21"
     log-symbols: "npm:^4.0.0"
-    minimist: "npm:^1.2.6"
+    minimist: "npm:^1.2.8"
     ospath: "npm:^1.2.2"
     pretty-bytes: "npm:^5.6.0"
     proxy-from-env: "npm:1.0.0"
@@ -2250,7 +2250,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 35d6f809f622bf000c0ab0432404b234f02cad374790082ebda013a6ea2be9f938ba3f6b86f4a170bc9c702216cee29178a9f8340384889c94bdaa7c29db887b
+  checksum: 51e026bc96a89f35cf92c6d6db42a2997ce66d592a0c03edcc47a9b4c56b568b163e5c61d6c4e3d692724e2f0c24547d9d6b509dca025b6e3ee3f8c16fb19600
   languageName: node
   linkType: hard
 
@@ -4277,6 +4277,13 @@ __metadata:
   version: 1.2.7
   resolution: "minimist@npm:1.2.7"
   checksum: 7bb50119bb59f48228a834e293a566c4b0e1b6c4648db83fb88830b4f932bfeaca72158bcdcc8a74130b339167eda92ec4cabb65faf07ab8d32542889a451676
+  languageName: node
+  linkType: hard
+
+"minimist@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 8598f846f2b7546b22b01ce486df27da216a302367afe17f2a032da12fcb8d33bfbf2c523051230864abf0b806748bd60d4cd0863fae35fe104da1ff6194a185
   languageName: node
   linkType: hard
 
