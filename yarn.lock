@@ -980,16 +980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.3.0":
-  version: 13.3.0
-  resolution: "@next/eslint-plugin-next@npm:13.3.0"
-  dependencies:
-    glob: "npm:7.1.7"
-  checksum: 2734c6f3f533f5747fbc4de091f898eac5ed03a54a0cd36b49ae84b4d74b694d690e365a6f2e4b87e33b9657b83e5918d91f90d486135630d5724db98c680a77
-  languageName: node
-  linkType: hard
-
-"@next/eslint-plugin-next@npm:^13.3.1":
+"@next/eslint-plugin-next@npm:13.3.1, @next/eslint-plugin-next@npm:^13.3.1":
   version: 13.3.1
   resolution: "@next/eslint-plugin-next@npm:13.3.1"
   dependencies:
@@ -2601,11 +2592,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^13.3.0":
-  version: 13.3.0
-  resolution: "eslint-config-next@npm:13.3.0"
+"eslint-config-next@npm:^13.3.1":
+  version: 13.3.1
+  resolution: "eslint-config-next@npm:13.3.1"
   dependencies:
-    "@next/eslint-plugin-next": "npm:13.3.0"
+    "@next/eslint-plugin-next": "npm:13.3.1"
     "@rushstack/eslint-patch": "npm:^1.1.3"
     "@typescript-eslint/parser": "npm:^5.42.0"
     eslint-import-resolver-node: "npm:^0.3.6"
@@ -2620,7 +2611,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 6e21ed9af61141aa916cf0100a493b2d4c9c115ac0203d5cbbf5d32a24300f95e1531d00e0181c256eb8873bc7586de0971d2bcac4972d0a2e26ff6697690fbe
+  checksum: 57e24dcf39205ca7081794c5e257d550a1d07f5e8c3a71b1eb5ef2ed9d52e617b29ff8635bf3a3bc46deec191bdd56fa12653407392b8760eb9a9c94ca083cb0
   languageName: node
   linkType: hard
 
@@ -5788,7 +5779,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^5.59.0"
     cypress: "npm:^12.10.0"
     eslint: "npm:^8.39.0"
-    eslint-config-next: "npm:^13.3.0"
+    eslint-config-next: "npm:^13.3.1"
     eslint-plugin-react: "npm:^7.32.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-typescript-sort-keys: "npm:^2.3.0"
