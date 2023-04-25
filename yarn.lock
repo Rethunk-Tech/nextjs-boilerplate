@@ -1189,11 +1189,11 @@ __metadata:
   linkType: hard
 
 "@types/react-dom@npm:^18.0.11":
-  version: 18.0.11
-  resolution: "@types/react-dom@npm:18.0.11"
+  version: 18.2.0
+  resolution: "@types/react-dom@npm:18.2.0"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 429119548045bb8ca6f34522c2698973fb92a0ebb1f1b2afa061e41ae9d091d10d0cc9bbbfd52b3cfe948486898cfaaf29d3721650a6d52dc0d3ab81c0245b82
+  checksum: 5f745ca83e8c47eeaae42963c15f07535587551f1d6c00cbce49304ef5dbd98c8893b48ee3e490567d0e312e21ba8718ed774685633f1f982fa56f50a4512e8e
   languageName: node
   linkType: hard
 
