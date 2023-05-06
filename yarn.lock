@@ -612,6 +612,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/utils@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@emotion/utils@npm:1.2.1"
+  checksum: d80f12813e9663a1dc9e824efe57000c3ca296aa5207029682854eee09d34c0395f462cf7b0d057b5460840ac65170053e0f6c57493069c982b8070d26dc79e0
+  languageName: node
+  linkType: hard
+
 "@emotion/weak-memoize@npm:^0.3.0":
   version: 0.3.0
   resolution: "@emotion/weak-memoize@npm:0.3.0"
@@ -5796,7 +5803,7 @@ __metadata:
     "@emotion/react": "npm:^11.10.8"
     "@emotion/server": "npm:^11.10.0"
     "@emotion/styled": "npm:^11.10.8"
-    "@emotion/utils": "npm:^1.2.0"
+    "@emotion/utils": "npm:^1.2.1"
     "@mui/icons-material": "npm:^5.11.16"
     "@mui/material": "npm:^5.12.2"
     "@mui/system": "npm:^5.12.1"
