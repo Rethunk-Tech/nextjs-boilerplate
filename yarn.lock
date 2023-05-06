@@ -5794,7 +5794,7 @@ __metadata:
   resolution: "ui-builder-react@workspace:."
   dependencies:
     "@babel/core": "npm:^7.21.8"
-    "@emotion/cache": "npm:^11.10.8"
+    "@emotion/cache": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.0"
     "@emotion/server": "npm:^11.11.0"
     "@emotion/styled": "npm:^11.11.0"
