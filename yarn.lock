@@ -600,11 +600,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/server@npm:^11.10.0":
-  version: 11.10.0
-  resolution: "@emotion/server@npm:11.10.0"
+"@emotion/server@npm:^11.11.0":
+  version: 11.11.0
+  resolution: "@emotion/server@npm:11.11.0"
   dependencies:
-    "@emotion/utils": "npm:^1.2.0"
+    "@emotion/utils": "npm:^1.2.1"
     html-tokenize: "npm:^2.0.0"
     multipipe: "npm:^1.0.2"
     through: "npm:^2.3.8"
@@ -613,7 +613,7 @@ __metadata:
   peerDependenciesMeta:
     "@emotion/css":
       optional: true
-  checksum: f32b9600ffe525c2402143423249a2cb96d68197dd5b427c714593a10b8df0c010e29576df83a3ec9488a8c532722f4f49c8ed9aad4bc991e825a9bc25942e52
+  checksum: 333bf90a901d2cc4442c12b0d3539c2885324e452cd1d74b27148ebb518aa44f45e50e1a9eabf04a0255aee8919888a3b3effd866dc25ea7a106ead0903d3393
   languageName: node
   linkType: hard
 
@@ -5834,7 +5834,7 @@ __metadata:
     "@babel/core": "npm:^7.21.5"
     "@emotion/cache": "npm:^11.10.8"
     "@emotion/react": "npm:^11.10.8"
-    "@emotion/server": "npm:^11.10.0"
+    "@emotion/server": "npm:^11.11.0"
     "@emotion/styled": "npm:^11.11.0"
     "@emotion/utils": "npm:^1.2.1"
     "@mui/icons-material": "npm:^5.11.16"
