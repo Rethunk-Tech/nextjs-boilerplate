@@ -668,23 +668,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/private-theming@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "@mui/private-theming@npm:5.12.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-    "@mui/utils": "npm:^5.12.3"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: d7d0a48e28816c065215d41744bb27f37f735a476d3eb9db08995995acf4d7856d76a2c3612e6d09c922d3f0b101320f540a7544c9c15d30da6049c5e8ad5b95
-  languageName: node
-  linkType: hard
-
 "@mui/private-theming@npm:^5.13.1":
   version: 5.13.1
   resolution: "@mui/private-theming@npm:5.13.1"
@@ -720,34 +703,6 @@ __metadata:
     "@emotion/styled":
       optional: true
   checksum: 4b0a168d2a874ef420287ebc8ad139fbd181fb0e5a373645e51e2861f9db60f4d93521595b9d6f137ddb8e6cfabee1ca67166fe1c79549d7c8db9b31f3fc05d1
-  languageName: node
-  linkType: hard
-
-"@mui/system@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "@mui/system@npm:5.12.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-    "@mui/private-theming": "npm:^5.12.3"
-    "@mui/styled-engine": "npm:^5.12.3"
-    "@mui/types": "npm:^7.2.4"
-    "@mui/utils": "npm:^5.12.3"
-    clsx: "npm:^1.2.1"
-    csstype: "npm:^3.1.2"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@emotion/react": ^11.5.0
-    "@emotion/styled": ^11.3.0
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: b2bce726b17acb7ea8f37c326265b4a5bd5af8b2bb625daa30fd7746acb00905f8f88d954db65f7eae6036c31719ba347edb1a330266939a8a18125a689f8427
   languageName: node
   linkType: hard
 
@@ -788,21 +743,6 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 651ad27d90e052ede4698bea349728bfdd4c415aebcf718e4fb401a281956a33c1748743fe70e5664e75585db94555077658ccf33e6a194b7ee26e44d8e6da8e
-  languageName: node
-  linkType: hard
-
-"@mui/utils@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "@mui/utils@npm:5.12.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-    "@types/prop-types": "npm:^15.7.5"
-    "@types/react-is": "npm:^16.7.1 || ^17.0.0"
-    prop-types: "npm:^15.8.1"
-    react-is: "npm:^18.2.0"
-  peerDependencies:
-    react: ^17.0.0 || ^18.0.0
-  checksum: 092d17e9e4c19d9eb47a066e655f4e95cc54fefcaf3f35c401d1d36585aa6fafeb35d79edc52dffc13eb33f23db69e9134c5f79c6a8c1646b4ac08bda035bd66
   languageName: node
   linkType: hard
 
@@ -1054,15 +994,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-is@npm:^16.7.1 || ^17.0.0":
-  version: 17.0.4
-  resolution: "@types/react-is@npm:17.0.4"
-  dependencies:
-    "@types/react": "npm:^17"
-  checksum: 37f34822b0e4b78af5f3915ca8d35ea295382bcda053f5b5dbb082fbb99f4ff7d37dc41f0bccbc3ee15a1463741ec4af826dfff08b27dd418088cdf907a4216c
-  languageName: node
-  linkType: hard
-
 "@types/react-is@npm:^18.2.0":
   version: 18.2.0
   resolution: "@types/react-is@npm:18.2.0"
@@ -1089,17 +1020,6 @@ __metadata:
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 7b71e98c9ca9e5a7db8573ba96bf018e42f87591832cee85e3606334aa6203af8df1e562d349dc6fd5984621d6dfe8d1b2a2521c933803cc12755d31373c8e5a
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17":
-  version: 17.0.59
-  resolution: "@types/react@npm:17.0.59"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: cf1c03dee1fd46cd549a0f9a27ca694b0b7db969e3e01acc6a97dc94b794bfcc37f8aa615e1a2a67d000ebb9c72e01f039347a9ad28deca81e471aa5bc2b5864
   languageName: node
   linkType: hard
 
@@ -5480,7 +5400,7 @@ __metadata:
     "@emotion/utils": "npm:^1.2.1"
     "@mui/icons-material": "npm:^5.11.16"
     "@mui/material": "npm:^5.13.1"
-    "@mui/system": "npm:^5.12.3"
+    "@mui/system": "npm:^5.13.1"
     "@next/eslint-plugin-next": "npm:^13.4.2"
     "@types/node": "npm:^20.2.3"
     "@types/react": "npm:^18.2.6"
