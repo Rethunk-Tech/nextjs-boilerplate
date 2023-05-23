@@ -313,7 +313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:^11.10.8, @emotion/cache@npm:^11.11.0":
+"@emotion/cache@npm:^11.11.0":
   version: 11.11.0
   resolution: "@emotion/cache@npm:11.11.0"
   dependencies:
@@ -685,27 +685,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/styled-engine@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "@mui/styled-engine@npm:5.12.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-    "@emotion/cache": "npm:^11.10.8"
-    csstype: "npm:^3.1.2"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-  checksum: 4b0a168d2a874ef420287ebc8ad139fbd181fb0e5a373645e51e2861f9db60f4d93521595b9d6f137ddb8e6cfabee1ca67166fe1c79549d7c8db9b31f3fc05d1
-  languageName: node
-  linkType: hard
-
 "@mui/styled-engine@npm:^5.13.2":
   version: 5.13.2
   resolution: "@mui/styled-engine@npm:5.13.2"
@@ -724,34 +703,6 @@ __metadata:
     "@emotion/styled":
       optional: true
   checksum: 4a2b47893bc52e0321e1dfd034999bd817820f6bff53ccbb714174f620978443c1e09dad4773ab7269a40a66550256792f25a430e0f3176b624e3a74987b5ec2
-  languageName: node
-  linkType: hard
-
-"@mui/system@npm:^5.13.1":
-  version: 5.13.1
-  resolution: "@mui/system@npm:5.13.1"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-    "@mui/private-theming": "npm:^5.13.1"
-    "@mui/styled-engine": "npm:^5.12.3"
-    "@mui/types": "npm:^7.2.4"
-    "@mui/utils": "npm:^5.13.1"
-    clsx: "npm:^1.2.1"
-    csstype: "npm:^3.1.2"
-    prop-types: "npm:^15.8.1"
-  peerDependencies:
-    "@emotion/react": ^11.5.0
-    "@emotion/styled": ^11.3.0
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: b069ab04da2179a5b0ec21bbf351b6b0238d4e1c75ededb1e177719c52046aedc969d2465abda1a5b93f57084a5efc69d24b2b20230a8336b0db674c4347e96c
   languageName: node
   linkType: hard
 
@@ -5440,7 +5391,7 @@ __metadata:
     "@emotion/utils": "npm:^1.2.1"
     "@mui/icons-material": "npm:^5.11.16"
     "@mui/material": "npm:^5.13.2"
-    "@mui/system": "npm:^5.13.1"
+    "@mui/system": "npm:^5.13.2"
     "@next/eslint-plugin-next": "npm:^13.4.3"
     "@types/node": "npm:^20.2.3"
     "@types/react": "npm:^18.2.6"
