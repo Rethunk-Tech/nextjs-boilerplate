@@ -34,9 +34,6 @@ const Main = styled('main', {
 const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProps>) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const AnyComponent = Component as any
-
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -46,7 +43,7 @@ const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProp
         <CssBaseline />
 
         <Main>
-          <AnyComponent {...pageProps} />
+          <Component {...pageProps} />
         </Main>
       </ThemeProvider>
     </CacheProvider>
