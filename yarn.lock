@@ -1031,11 +1031,11 @@ __metadata:
   linkType: hard
 
 "@types/react-dom@npm:^18.2.5":
-  version: 18.2.5
-  resolution: "@types/react-dom@npm:18.2.5"
+  version: 18.2.6
+  resolution: "@types/react-dom@npm:18.2.6"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 7ae5eeb0c9c9aee7eaac10b2afe527774518a4c6e33c84822fc69911ac929c76bb2882585e9052f2ee99b9588924f05f5fd983bfe181b0385f290e5940a0a754
+  checksum: ce2287c58c5d6dd0f2a0f56c65909ed1f5e00ca31132bf1d13d4b3723ab956ce4c7a28fef9fa583c0a49989eed0504cd38573115a5c8e96f7cf4d5dd2ae35251
   languageName: node
   linkType: hard
 
