@@ -299,6 +299,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.22.6":
+  version: 7.22.6
+  resolution: "@babel/runtime@npm:7.22.6"
+  dependencies:
+    regenerator-runtime: "npm:^0.13.11"
+  checksum: 5a5205807b8a10bbc4205414de9e7c3c9c042f717708eb8fa7395efea73211c62e368a83a484fb7f6b840af19b9ea2d88ee16781227433f00bb690b6454531a8
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/template@npm:7.22.5"
@@ -824,14 +833,14 @@ __metadata:
   linkType: hard
 
 "@mui/system@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "@mui/system@npm:5.14.0"
+  version: 5.14.1
+  resolution: "@mui/system@npm:5.14.1"
   dependencies:
-    "@babel/runtime": "npm:^7.22.5"
+    "@babel/runtime": "npm:^7.22.6"
     "@mui/private-theming": "npm:^5.13.7"
     "@mui/styled-engine": "npm:^5.13.2"
     "@mui/types": "npm:^7.2.4"
-    "@mui/utils": "npm:^5.13.7"
+    "@mui/utils": "npm:^5.14.1"
     clsx: "npm:^1.2.1"
     csstype: "npm:^3.1.2"
     prop-types: "npm:^15.8.1"
@@ -847,7 +856,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 906ca9ab1a05ec25348b66f570b039fc04294439f0b44bf1ca4c48ec1de2bc129cf27ce8604a34d1d67c468ccb9356d3a504f0158a1359847e5a82e4f03225f5
+  checksum: 4696b95ca935c6b214261545403ab79c53f512c074d823554fc13267409916a9d141bcaf821771d9bad15213768a6339299ddfe0335ca7ce63fb1c8916cc61cd
   languageName: node
   linkType: hard
 
@@ -875,6 +884,21 @@ __metadata:
   peerDependencies:
     react: ^17.0.0 || ^18.0.0
   checksum: 155ea242fc37abb88b320b55bce3f84adcd025e5fd06fc1e1a6c80ace65f6b7c8f726512edb446b9f13d16a8ccd4f5d49f25d058467be13b2aa435f4c2837391
+  languageName: node
+  linkType: hard
+
+"@mui/utils@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "@mui/utils@npm:5.14.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.22.6"
+    "@types/prop-types": "npm:^15.7.5"
+    "@types/react-is": "npm:^18.2.1"
+    prop-types: "npm:^15.8.1"
+    react-is: "npm:^18.2.0"
+  peerDependencies:
+    react: ^17.0.0 || ^18.0.0
+  checksum: 376e69458365906b1e3e58072bea02b8a7f16f1f5880459d1b7ce175d043582157c17f08392f9008f0acc59d486e140d4fb9f13de212c27ed364f50b0fbeff69
   languageName: node
   linkType: hard
 
