@@ -20,7 +20,7 @@
     "@emotion/styled": "^11.11.0",
     "@emotion/utils": "^1.2.1",
     "@mui/icons-material": "^5.14.0",
-    "@mui/material": "^5.14.0",
+    "@mui/material": "^5.14.1",
     "@mui/system": "^5.14.0",
     "next": "^13.4.10",
     "react": "^18.2.0",
