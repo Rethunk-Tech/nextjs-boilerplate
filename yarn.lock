@@ -745,11 +745,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "@mui/icons-material@npm:5.14.0"
+"@mui/icons-material@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "@mui/icons-material@npm:5.14.1"
   dependencies:
-    "@babel/runtime": "npm:^7.22.5"
+    "@babel/runtime": "npm:^7.22.6"
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^17.0.0 || ^18.0.0
@@ -757,7 +757,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: edb921a25b09b713d51562116b3497ba6a3bf256c33d60bb99bd23bfdaf0ce03da0db3b709a177716af69b46c977594d61ae2e87e434f61701cc01c16df353f6
+  checksum: edc17c5959066a388e88739e310668de3ad6dd39ea05b3bf2bd06b0b963b753738a4044439d0ca5156c57d0f2131d304b36ac13c80c09d2e848cceba9bced5ba
   languageName: node
   linkType: hard
 
@@ -5532,7 +5532,7 @@ __metadata:
     "@emotion/server": "npm:^11.11.0"
     "@emotion/styled": "npm:^11.11.0"
     "@emotion/utils": "npm:^1.2.1"
-    "@mui/icons-material": "npm:^5.14.0"
+    "@mui/icons-material": "npm:^5.14.1"
     "@mui/material": "npm:^5.14.1"
     "@mui/system": "npm:^5.14.0"
     "@next/eslint-plugin-next": "npm:^13.4.10"
