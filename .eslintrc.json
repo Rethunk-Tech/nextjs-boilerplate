@@ -21,8 +21,7 @@
   "plugins": [
     "react",
     "react-hooks",
-    "@typescript-eslint",
-    "typescript-sort-keys"
+    "@typescript-eslint"
   ],
   "rules": {
     // force two spaces indentation
