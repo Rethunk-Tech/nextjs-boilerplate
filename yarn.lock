@@ -909,21 +909,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.4.12":
+"@next/eslint-plugin-next@npm:13.4.12, @next/eslint-plugin-next@npm:^13.4.12":
   version: 13.4.12
   resolution: "@next/eslint-plugin-next@npm:13.4.12"
   dependencies:
     glob: "npm:7.1.7"
   checksum: fee61c2ab8982be92bd6b3c12bb13ede5e221c1ab758a267510109b2f75ced0b176327fbafd90c488125a1d7abacbbb242ee4e53cad5ee2dfcde544f82b9ac07
-  languageName: node
-  linkType: hard
-
-"@next/eslint-plugin-next@npm:^13.4.10":
-  version: 13.4.10
-  resolution: "@next/eslint-plugin-next@npm:13.4.10"
-  dependencies:
-    glob: "npm:7.1.7"
-  checksum: ecc0cfb21d262dfedb04cf76209920f58a01df20dedec57d5d3ee2d8e0e5e2b335d88466460e92cbe71dca452ea0e59c7b17ae090d4aaaa563912df4ecde710e
   languageName: node
   linkType: hard
 
@@ -5541,7 +5532,7 @@ __metadata:
     "@mui/icons-material": "npm:^5.14.1"
     "@mui/material": "npm:^5.14.1"
     "@mui/system": "npm:^5.14.1"
-    "@next/eslint-plugin-next": "npm:^13.4.10"
+    "@next/eslint-plugin-next": "npm:^13.4.12"
     "@types/node": "npm:^20.4.2"
     "@types/react": "npm:^18.2.15"
     "@types/react-dom": "npm:^18.2.7"
