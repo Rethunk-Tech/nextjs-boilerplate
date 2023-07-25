@@ -738,10 +738,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/core-downloads-tracker@npm:^5.14.1":
-  version: 5.14.1
-  resolution: "@mui/core-downloads-tracker@npm:5.14.1"
-  checksum: e0e1729375ecd0088c25fa714a92b8a118678ce5d387df54cabaf28acbb02299641618ffd91ffe83180afb026c00a29f01b70d94276280694013ef4d44a0420c
+"@mui/core-downloads-tracker@npm:^5.14.2":
+  version: 5.14.2
+  resolution: "@mui/core-downloads-tracker@npm:5.14.2"
+  checksum: 5959ad612d5b0871f601c3e239c1cb7bc65e471712dc4787e9308ec9d3546f2d3e39b13e5fc676660d184d395482bb007c36893316fa1171b1c777879435bcf5
   languageName: node
   linkType: hard
 
@@ -762,12 +762,12 @@ __metadata:
   linkType: hard
 
 "@mui/material@npm:^5.14.1":
-  version: 5.14.1
-  resolution: "@mui/material@npm:5.14.1"
+  version: 5.14.2
+  resolution: "@mui/material@npm:5.14.2"
   dependencies:
     "@babel/runtime": "npm:^7.22.6"
     "@mui/base": "npm:5.0.0-beta.8"
-    "@mui/core-downloads-tracker": "npm:^5.14.1"
+    "@mui/core-downloads-tracker": "npm:^5.14.2"
     "@mui/system": "npm:^5.14.1"
     "@mui/types": "npm:^7.2.4"
     "@mui/utils": "npm:^5.14.1"
@@ -790,7 +790,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 5b35442965f91c48fd275ea164d449c9c77e996aa95f67cc552e6441a82a8256a9a633a8205e75f8de10fa6ca957fd2c488cd8a3942b8ab881417c71321dd1c3
+  checksum: 2ae65d2c213c542649d4b52560e7383a7df4573db971f82594ac8202058639cdfc8d307ed194a61ec3b8d2f6bf3114e59bbe2147256e767a4203e26dcafa05ed
   languageName: node
   linkType: hard
 
