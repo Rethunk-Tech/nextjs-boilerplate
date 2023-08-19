@@ -37,7 +37,7 @@
     "cypress": "^12.17.2",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.12",
-    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "start-server-and-test": "^2.0.0",
     "typescript": "^5.1.6"
