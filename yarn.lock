@@ -377,9 +377,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/request@npm:2.88.12":
-  version: 2.88.12
-  resolution: "@cypress/request@npm:2.88.12"
+"@cypress/request@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@cypress/request@npm:3.0.0"
   dependencies:
     aws-sign2: "npm:~0.7.0"
     aws4: "npm:^1.8.0"
@@ -399,7 +399,7 @@ __metadata:
     tough-cookie: "npm:^4.1.3"
     tunnel-agent: "npm:^0.6.0"
     uuid: "npm:^8.3.2"
-  checksum: 0bce42552920c031cfd6baf1655e4dbcb8ff7685d07c9e87fe9f3c60ae1e9c8b186fba791db2162097b051f64b390c77874571cecfafd4cd40d989b52d23552c
+  checksum: bb072b024d985322373f9884d107a5ee37ebd736e74a5accae4e42792ac9b7290e3759b9f3ca8ecb61b40407182b079b22e18e5e39c81e802394edb29ce891e7
   languageName: node
   linkType: hard
 
@@ -2104,11 +2104,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^12.17.4":
-  version: 12.17.4
-  resolution: "cypress@npm:12.17.4"
+"cypress@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "cypress@npm:13.0.0"
   dependencies:
-    "@cypress/request": "npm:2.88.12"
+    "@cypress/request": "npm:^3.0.0"
     "@cypress/xvfb": "npm:^1.2.4"
     "@types/node": "npm:^16.18.39"
     "@types/sinonjs__fake-timers": "npm:8.1.1"
@@ -2153,7 +2153,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 3e1fe8bd282a031e857410bc01fef0c41f0ab6fbe82f9784b6fdda84ed70d2b55f0cff1da5d867f4fd6039ebb088e5f5af210ab28f0c8ec589bba30019ec2e94
+  checksum: 7ab81282369cfbd09f54c01ec41545ef8e92e2a4cf8409fd521bdc88898f0d6636954e4462ff080d3421123a50a1d2e3935866608c54a6089d22e8b700ae1075
   languageName: node
   linkType: hard
 
@@ -5778,7 +5778,7 @@ __metadata:
     "@types/react-dom": "npm:^18.2.7"
     "@typescript-eslint/eslint-plugin": "npm:^6.5.0"
     "@typescript-eslint/parser": "npm:^6.5.0"
-    cypress: "npm:^12.17.4"
+    cypress: "npm:^13.0.0"
     eslint: "npm:^8.48.0"
     eslint-config-next: "npm:^13.4.19"
     eslint-plugin-react: "npm:^7.33.2"
