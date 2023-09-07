@@ -21,7 +21,7 @@
     "@emotion/utils": "^1.2.1",
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
-    "@mui/system": "^5.14.7",
+    "@mui/system": "^5.14.8",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
