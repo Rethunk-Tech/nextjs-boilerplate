@@ -58,25 +58,25 @@ __metadata:
   linkType: hard
 
 "@babel/core@npm:^7.22.15":
-  version: 7.22.15
-  resolution: "@babel/core@npm:7.22.15"
+  version: 7.22.17
+  resolution: "@babel/core@npm:7.22.17"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.0"
     "@babel/code-frame": "npm:^7.22.13"
     "@babel/generator": "npm:^7.22.15"
     "@babel/helper-compilation-targets": "npm:^7.22.15"
-    "@babel/helper-module-transforms": "npm:^7.22.15"
+    "@babel/helper-module-transforms": "npm:^7.22.17"
     "@babel/helpers": "npm:^7.22.15"
-    "@babel/parser": "npm:^7.22.15"
+    "@babel/parser": "npm:^7.22.16"
     "@babel/template": "npm:^7.22.15"
-    "@babel/traverse": "npm:^7.22.15"
-    "@babel/types": "npm:^7.22.15"
+    "@babel/traverse": "npm:^7.22.17"
+    "@babel/types": "npm:^7.22.17"
     convert-source-map: "npm:^1.7.0"
     debug: "npm:^4.1.0"
     gensync: "npm:^1.0.0-beta.2"
     json5: "npm:^2.2.3"
     semver: "npm:^6.3.1"
-  checksum: 87e0b67a962d055bc3a8db718209649e8ac7ee97eaf4dda9ac51ffe7adf817c188473cd540f3c50628a8602d37ae04e2b64fdc62fd2ce0547231c92f5f3c32de
+  checksum: cef824eea443a6f5d3a3b369525d50f6ee824757ec8e02a2edab99e7971a5ea99d9128aa69d7400e8a08e420ffd0c21a736ce4f525d55c909a3d3c6c21e3579e
   languageName: node
   linkType: hard
 
@@ -149,9 +149,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-transforms@npm:^7.22.15":
-  version: 7.22.15
-  resolution: "@babel/helper-module-transforms@npm:7.22.15"
+"@babel/helper-module-transforms@npm:^7.22.17":
+  version: 7.22.17
+  resolution: "@babel/helper-module-transforms@npm:7.22.17"
   dependencies:
     "@babel/helper-environment-visitor": "npm:^7.22.5"
     "@babel/helper-module-imports": "npm:^7.22.15"
@@ -160,7 +160,7 @@ __metadata:
     "@babel/helper-validator-identifier": "npm:^7.22.15"
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: ea154efbbd66d57b2a44a6b1cf7b1826020dbb4b105c2198443d97ea1e9e341b79051f2af43adadc22c9552df3d290d68c2f7cb82818d09cab52842566082cf8
+  checksum: 5622f397afcaad8bb5d05645fbed502a9d463452c3617fb537f5e69d5a9347a7bb24f9256968a6c3eddf3ab66b9ab98b7ac7c69ad558ac658b9e84ea2e5e127f
   languageName: node
   linkType: hard
 
@@ -268,7 +268,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.22.15":
+"@babel/parser@npm:^7.22.15, @babel/parser@npm:^7.22.16":
   version: 7.22.16
   resolution: "@babel/parser@npm:7.22.16"
   bin:
@@ -344,6 +344,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/traverse@npm:^7.22.17":
+  version: 7.22.17
+  resolution: "@babel/traverse@npm:7.22.17"
+  dependencies:
+    "@babel/code-frame": "npm:^7.22.13"
+    "@babel/generator": "npm:^7.22.15"
+    "@babel/helper-environment-visitor": "npm:^7.22.5"
+    "@babel/helper-function-name": "npm:^7.22.5"
+    "@babel/helper-hoist-variables": "npm:^7.22.5"
+    "@babel/helper-split-export-declaration": "npm:^7.22.6"
+    "@babel/parser": "npm:^7.22.16"
+    "@babel/types": "npm:^7.22.17"
+    debug: "npm:^4.1.0"
+    globals: "npm:^11.1.0"
+  checksum: 16d3e042b67fdb967277557e1ee169adb068ce5eaa87fe05affb9f593a585faf7788f454459bad5ab052acb05b9ce982d936a4a67f21b8ff588fb9c711996689
+  languageName: node
+  linkType: hard
+
 "@babel/types@npm:^7.21.4, @babel/types@npm:^7.8.3":
   version: 7.22.0
   resolution: "@babel/types@npm:7.22.0"
@@ -363,6 +381,17 @@ __metadata:
     "@babel/helper-validator-identifier": "npm:^7.22.15"
     to-fast-properties: "npm:^2.0.0"
   checksum: acca3e4c6c8eacf83e31679b5f39bc8f7441b60179f7721c0e155321e258b4b0aa408cd5d369c23e5d775a1d993dde932065447f9d0336b63d95165aac142dac
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.22.17":
+  version: 7.22.17
+  resolution: "@babel/types@npm:7.22.17"
+  dependencies:
+    "@babel/helper-string-parser": "npm:^7.22.5"
+    "@babel/helper-validator-identifier": "npm:^7.22.15"
+    to-fast-properties: "npm:^2.0.0"
+  checksum: 6988622f4b0aab0e8de9d51d2c2e05d14db27777af13af6695298bf95305b5bcc15821f6b28c73c19cbda207126c16a245809fa9b81357a2abc2b211dc6012e0
   languageName: node
   linkType: hard
 
