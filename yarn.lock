@@ -2778,6 +2778,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-mui-path-imports@npm:^0.0.15":
+  version: 0.0.15
+  resolution: "eslint-plugin-mui-path-imports@npm:0.0.15"
+  dependencies:
+    requireindex: "npm:^1.2.0"
+  peerDependencies:
+    eslint: ">=6"
+  checksum: a0dfe8fa633274c7ffc17488bdc55335fbdd2a06d1f354c819ebd4fb711df8bc6a4340583b5eee283ed91eb3314870cb9433b48e27c97bf49e3ba8b23dc7e1cc
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-react-hooks@npm:^4.5.0 || 5.0.0-canary-7118f5dd7-20230705":
   version: 5.0.0-canary-7118f5dd7-20230705
   resolution: "eslint-plugin-react-hooks@npm:5.0.0-canary-7118f5dd7-20230705"
@@ -5112,6 +5123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"requireindex@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "requireindex@npm:1.2.0"
+  checksum: 14ca7427fea875f9741bd21d226dbc767c11ec18d9f8bfe84abaf9c78be1d01160397c875bcf1cd1042b63f6517ffb5fa05b28c2a707b84b07bce23673e6bf3f
+  languageName: node
+  linkType: hard
+
 "requires-port@npm:^1.0.0":
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
@@ -5946,6 +5964,7 @@ __metadata:
     cypress: "npm:^13.2.0"
     eslint: "npm:^8.50.0"
     eslint-config-next: "npm:^13.5.3"
+    eslint-plugin-mui-path-imports: "npm:^0.0.15"
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     next: "npm:^13.5.3"
