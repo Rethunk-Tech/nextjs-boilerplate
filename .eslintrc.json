@@ -21,14 +21,12 @@
   "plugins": [
     "react",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-mui-path-imports"
   ],
   "rules": {
     // force two spaces indentation
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": ["error", 2],
 
     // force key alignment
     "key-spacing": [
@@ -47,22 +45,13 @@
     ],
 
     // force unix linebreaks
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
+    "linebreak-style": ["error", "unix"],
 
     // force single quotes
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "quotes": ["error", "single"],
 
     // force no semicolons
-    "semi": [
-      "error",
-      "never"
-    ],
+    "semi": ["error", "never"],
 
     //
     // RULES FROM PLUGINS
@@ -77,18 +66,13 @@
     ],
 
     // force use of destructruing assignment in components
-    "react/destructuring-assignment": [
-      "error",
-      "always"
-    ],
+    "react/destructuring-assignment": ["error", "always"],
 
     // force JSX only in TSX files
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".tsx"
-        ]
+        "extensions": [".tsx"]
       }
     ],
 
@@ -97,56 +81,23 @@
     "react-hooks/exhaustive-deps": "warn",
 
     // various react rules
-    "react/no-arrow-function-lifecycle": [
-      "error"
-    ],
-    "react/no-children-prop": [
-      "error"
-    ],
-    "react/no-namespace": [
-      "error"
-    ],
-    "react/no-redundant-should-component-update": [
-      "error"
-    ],
-    "react/no-typos": [
-      "warn"
-    ],
-    "react/no-unstable-nested-components": [
-      "warn"
-    ],
-    "react/prefer-es6-class": [
-      "error"
-    ],
-    "react/self-closing-comp": [
-      "error"
-    ],
-    "react/state-in-constructor": [
-      "error"
-    ],
-    "react/style-prop-object": [
-      "error"
-    ],
-    "react/void-dom-elements-no-children": [
-      "error"
-    ],
-    "react/jsx-closing-bracket-location": [
-      1,
-      "line-aligned"
-    ],
-    "react/sort-comp": [
-      "error"
-    ],
-    "react/prefer-stateless-function": [
-      "error"
-    ],
-    "react/require-optimization": [
-      "error"
-    ],
+    "react/no-arrow-function-lifecycle": ["error"],
+    "react/no-children-prop": ["error"],
+    "react/no-namespace": ["error"],
+    "react/no-redundant-should-component-update": ["error"],
+    "react/no-typos": ["warn"],
+    "react/no-unstable-nested-components": ["warn"],
+    "react/prefer-es6-class": ["error"],
+    "react/self-closing-comp": ["error"],
+    "react/state-in-constructor": ["error"],
+    "react/style-prop-object": ["error"],
+    "react/void-dom-elements-no-children": ["error"],
+    "react/jsx-closing-bracket-location": [1, "line-aligned"],
+    "react/sort-comp": ["error"],
+    "react/prefer-stateless-function": ["error"],
+    "react/require-optimization": ["error"],
     // we don"t use prop types
-    "react/prop-types": [
-      "off"
-    ]
+    "react/prop-types": ["off"]
   },
   "settings": {
     "react": {
