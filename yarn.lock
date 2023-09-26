@@ -654,10 +654,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.49.0":
-  version: 8.49.0
-  resolution: "@eslint/js@npm:8.49.0"
-  checksum: 4b0151e373a143db9991241c9ef00c5c4a059d2c590e7ac238485dda7a153c45c11a48b24c81c317726ad5a24493f25732d6716f0a4d1f8ca12a0a2bcee1b282
+"@eslint/js@npm:8.50.0":
+  version: 8.50.0
+  resolution: "@eslint/js@npm:8.50.0"
+  checksum: 54e095254315be66a07d89ea37c31f6d7f55d31a8f8ef6b22b3bcbadeb2a0ec5d3336a8ca98ed43fa63da4624bec9e3b5b8a797a796daed7ec93b4aeed0627fc
   languageName: node
   linkType: hard
 
@@ -2871,14 +2871,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.49.0":
-  version: 8.49.0
-  resolution: "eslint@npm:8.49.0"
+"eslint@npm:^8.50.0":
+  version: 8.50.0
+  resolution: "eslint@npm:8.50.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
     "@eslint/eslintrc": "npm:^2.1.2"
-    "@eslint/js": "npm:8.49.0"
+    "@eslint/js": "npm:8.50.0"
     "@humanwhocodes/config-array": "npm:^0.11.11"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@nodelib/fs.walk": "npm:^1.2.8"
@@ -2914,7 +2914,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: 7f51a47291af0e762f5f7499b55554ee496a5866d7dcea2a703f0b897feea70014d3d267a89e6187977de739dc7cadb7f79c115fa965c13d14ca88704d225b1f
+  checksum: 8ccaacfb0e095536dc751feb3b0076a8b16308d3d3020655284170908d14c9ac4045cf7b7912219cac0cbee1b43cc6767ddf044712bce5c62e609a5df7f2fb92
   languageName: node
   linkType: hard
 
@@ -5860,7 +5860,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^6.7.0"
     "@typescript-eslint/parser": "npm:^6.7.3"
     cypress: "npm:^13.2.0"
-    eslint: "npm:^8.49.0"
+    eslint: "npm:^8.50.0"
     eslint-config-next: "npm:^13.4.19"
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
