@@ -1154,25 +1154,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 18.2.7
-  resolution: "@types/react@npm:18.2.7"
+"@types/react@npm:*, @types/react@npm:^18.2.22":
+  version: 18.2.26
+  resolution: "@types/react@npm:18.2.26"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 5703e342e02c45575b5e10b2fe13dd0df233d52e4e75e128819bea706c330c6ccbde16476ba268f1bbbc96a2faebb84ed0705aa507954feb30c834364ea50deb
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^18.2.22":
-  version: 18.2.22
-  resolution: "@types/react@npm:18.2.22"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: ac0320726bd8cd1f86610852751a6a2da3fbc37bf42444ea3bf90872fbf1399f50230c036cce9a5634222ad249249357ab55766dd7f8ff55f6feca65ff436bca
+  checksum: 18af3e2f814b26fedca896652c4a47aece5748b9511c6f5430756314d5147497976b0e6d3a57ca1ed0122e8c0bfdc6f8e648e560b7046230e8a59435108f4963
   languageName: node
   linkType: hard
 
