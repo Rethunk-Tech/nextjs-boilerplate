@@ -612,10 +612,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@eslint/js@npm:8.50.0"
-  checksum: 54e095254315be66a07d89ea37c31f6d7f55d31a8f8ef6b22b3bcbadeb2a0ec5d3336a8ca98ed43fa63da4624bec9e3b5b8a797a796daed7ec93b4aeed0627fc
+"@eslint/js@npm:8.52.0":
+  version: 8.52.0
+  resolution: "@eslint/js@npm:8.52.0"
+  checksum: 46361607b822755cc3a8e36435dfa662e6029f51626a1ef2125e0e94603967cd64b63cdd1f4585f2b74040575967178d86857f55839680bf871726369386243c
   languageName: node
   linkType: hard
 
@@ -673,14 +673,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/config-array@npm:^0.11.11":
-  version: 0.11.11
-  resolution: "@humanwhocodes/config-array@npm:0.11.11"
+"@humanwhocodes/config-array@npm:^0.11.13":
+  version: 0.11.13
+  resolution: "@humanwhocodes/config-array@npm:0.11.13"
   dependencies:
-    "@humanwhocodes/object-schema": "npm:^1.2.1"
+    "@humanwhocodes/object-schema": "npm:^2.0.1"
     debug: "npm:^4.1.1"
     minimatch: "npm:^3.0.5"
-  checksum: b2b683f167939feb13cc2424e1c69317be872ffa03946b85e8296e70de0933f26fb845b25e70c895545f010caae7444e48e9de42e1eb856740f914d7da7e1476
+  checksum: c8a092f36715a4b41dbc1ae83b76aa8463da0a57f670bf1a8c9fd23002c5a5e7245cb0e613be47acf606be321b5db82abb680bf25e70d896c937837cff1c3453
   languageName: node
   linkType: hard
 
@@ -691,10 +691,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/object-schema@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@humanwhocodes/object-schema@npm:1.2.1"
-  checksum: c860f96faaaaecd6c5c4ee6912f7c761579031b464c3cf55832e59e18b116968d89b570ef6a9a10b1670a67e7998a530c8c549b4a41b118153340772ad10cea9
+"@humanwhocodes/object-schema@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@humanwhocodes/object-schema@npm:2.0.1"
+  checksum: 4d48b93c02a8f1ea4d5f767a54f2b8e4c90783888bd3948d65d6f25a7f45db073dbec0891ee477e38830c069dcb7ed42f5211ea7dc783e687a47c86da7f59480
   languageName: node
   linkType: hard
 
@@ -1440,6 +1440,13 @@ __metadata:
     "@typescript-eslint/types": "npm:6.9.0"
     eslint-visitor-keys: "npm:^3.4.1"
   checksum: 27d8f8f6f90a30dc28ef60f9c95f760c049f39b6dc92f55f0c19814633765e7e7ce5a881a6454b21e0e4f98db8e9e874ca9b5655ed52c2f11ade7889cb6f9e12
+  languageName: node
+  linkType: hard
+
+"@ungap/structured-clone@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@ungap/structured-clone@npm:1.2.0"
+  checksum: 18903ed22a10ff197f8c1e60c592c94fac9f8fdf069777aa80aade600f3311e23802b8166557571ace22bfa8022be609b33ed8c021de8f59301f7bf6f2f91e18
   languageName: node
   linkType: hard
 
@@ -2902,17 +2909,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.50.0":
-  version: 8.50.0
-  resolution: "eslint@npm:8.50.0"
+"eslint@npm:^8.52.0":
+  version: 8.52.0
+  resolution: "eslint@npm:8.52.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
     "@eslint/eslintrc": "npm:^2.1.2"
-    "@eslint/js": "npm:8.50.0"
-    "@humanwhocodes/config-array": "npm:^0.11.11"
+    "@eslint/js": "npm:8.52.0"
+    "@humanwhocodes/config-array": "npm:^0.11.13"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@nodelib/fs.walk": "npm:^1.2.8"
+    "@ungap/structured-clone": "npm:^1.2.0"
     ajv: "npm:^6.12.4"
     chalk: "npm:^4.0.0"
     cross-spawn: "npm:^7.0.2"
@@ -2945,7 +2953,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: 8ccaacfb0e095536dc751feb3b0076a8b16308d3d3020655284170908d14c9ac4045cf7b7912219cac0cbee1b43cc6767ddf044712bce5c62e609a5df7f2fb92
+  checksum: a720fdb19eab67d8149efa2936969be8d1d32e3dbfc8c89aa8e7301ff07fef1a7bb49e011eb38c4da5edec93b24d65a723cf50f69d8fedce212f63569db4f4de
   languageName: node
   linkType: hard
 
@@ -6007,7 +6015,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^6.7.3"
     "@typescript-eslint/parser": "npm:^6.9.0"
     cypress: "npm:^13.3.0"
-    eslint: "npm:^8.50.0"
+    eslint: "npm:^8.52.0"
     eslint-config-next: "npm:^13.5.3"
     eslint-plugin-mui-path-imports: "npm:^0.0.15"
     eslint-plugin-react: "npm:^7.33.2"
