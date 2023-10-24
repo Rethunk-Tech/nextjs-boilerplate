@@ -48,26 +48,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.0":
-  version: 7.23.0
-  resolution: "@babel/core@npm:7.23.0"
+"@babel/core@npm:^7.23.2":
+  version: 7.23.2
+  resolution: "@babel/core@npm:7.23.2"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.0"
     "@babel/code-frame": "npm:^7.22.13"
     "@babel/generator": "npm:^7.23.0"
     "@babel/helper-compilation-targets": "npm:^7.22.15"
     "@babel/helper-module-transforms": "npm:^7.23.0"
-    "@babel/helpers": "npm:^7.23.0"
+    "@babel/helpers": "npm:^7.23.2"
     "@babel/parser": "npm:^7.23.0"
     "@babel/template": "npm:^7.22.15"
-    "@babel/traverse": "npm:^7.23.0"
+    "@babel/traverse": "npm:^7.23.2"
     "@babel/types": "npm:^7.23.0"
     convert-source-map: "npm:^2.0.0"
     debug: "npm:^4.1.0"
     gensync: "npm:^1.0.0-beta.2"
     json5: "npm:^2.2.3"
     semver: "npm:^6.3.1"
-  checksum: 81bbe3566cfa47a013ca8638777ca433055e1f444fc40da0b6d723647bf5f0dc72859eaeef7cdb7fb729e993c24ebe5199b4cd6ff08504064fddc83b4d0bdffe
+  checksum: f26e9f03f727cf04cd7a27f4b4b869046c2ebb75d576004bc242334972fa96032d91a0b7103aba576c2bcf2ef8b10c53dcce982482bff6b4ee0c4d93de72f55c
   languageName: node
   linkType: hard
 
@@ -222,14 +222,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helpers@npm:^7.23.0":
-  version: 7.23.1
-  resolution: "@babel/helpers@npm:7.23.1"
+"@babel/helpers@npm:^7.23.2":
+  version: 7.23.2
+  resolution: "@babel/helpers@npm:7.23.2"
   dependencies:
     "@babel/template": "npm:^7.22.15"
-    "@babel/traverse": "npm:^7.23.0"
+    "@babel/traverse": "npm:^7.23.2"
     "@babel/types": "npm:^7.23.0"
-  checksum: bedac1f824f7ed6e11b1b9e45d935e3431a3abaf504c2d747ca87416d8051eb6a69066dfceb84030e4d6cb42f82c2d94adb8faef6ac747d1e928ad4150d5accd
+  checksum: f2526e974b7a24537c382c2fcd02ffa1a7c00ba69fe4de18961f726ff51d227f8a350fb290d8a543d57bcc69b1badcce8075aef09ef33f8a7f1d018a62153b09
   languageName: node
   linkType: hard
 
@@ -311,9 +311,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.23.0":
-  version: 7.23.0
-  resolution: "@babel/traverse@npm:7.23.0"
+"@babel/traverse@npm:^7.23.2":
+  version: 7.23.2
+  resolution: "@babel/traverse@npm:7.23.2"
   dependencies:
     "@babel/code-frame": "npm:^7.22.13"
     "@babel/generator": "npm:^7.23.0"
@@ -325,7 +325,7 @@ __metadata:
     "@babel/types": "npm:^7.23.0"
     debug: "npm:^4.1.0"
     globals: "npm:^11.1.0"
-  checksum: e74146d7c0a1a44f8122a1c14cb668bc3db5a3d322aabd8e97bed1eaa3c2025773c0d057c686ab40c6ee724d67f705bcc9f854544a034325af88b3e1588de877
+  checksum: 5a1484c9d6fe70749970d8fd5fb9a7ad75b3c851f9604ae9efeadf0b9773aaa2f5d93ab6498b88291a8f2d44d5dfbcc2ba701503abd24e1a98bf3d08a82fe544
   languageName: node
   linkType: hard
 
@@ -6077,7 +6077,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ui-builder-react@workspace:."
   dependencies:
-    "@babel/core": "npm:^7.23.0"
+    "@babel/core": "npm:^7.23.2"
     "@emotion/cache": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.1"
     "@emotion/server": "npm:^11.11.0"
