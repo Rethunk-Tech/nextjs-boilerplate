@@ -20,7 +20,7 @@
     "@emotion/styled": "^11.11.0",
     "@emotion/utils": "^1.2.1",
     "@mui/icons-material": "^5.14.14",
-    "@mui/material": "^5.14.14",
+    "@mui/material": "^5.14.18",
     "@mui/system": "^5.14.14",
     "eslint-plugin-mui-path-imports": "^0.0.15",
     "next": "^13.5.6",
