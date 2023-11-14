@@ -4158,16 +4158,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.7.0":
-  version: 17.9.2
-  resolution: "joi@npm:17.9.2"
+"joi@npm:^17.11.0":
+  version: 17.11.0
+  resolution: "joi@npm:17.11.0"
   dependencies:
     "@hapi/hoek": "npm:^9.0.0"
     "@hapi/topo": "npm:^5.0.0"
     "@sideway/address": "npm:^4.1.3"
     "@sideway/formula": "npm:^3.0.1"
     "@sideway/pinpoint": "npm:^2.0.0"
-  checksum: 5de710ce67151429e9bb72c25506532b61874888e29cea7bfea2365d8555a9fbabc3a868e8ebab2dba6c0aa443e7c99efee89416dcb88e0fdb6e5425b211a742
+  checksum: 8e20df2848b3bdfc16daea3e44f4d7a1404b2d157cb05d6601315e4e3f477750b2a1b738670c58f08b2dcb475aaf7808e741984c5ea4fd01f50d9fd507832598
   languageName: node
   linkType: hard
 
@@ -4507,7 +4507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0, minimist@npm:^1.2.6, minimist@npm:^1.2.7, minimist@npm:^1.2.8, minimist@npm:~1.2.5":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.6, minimist@npm:^1.2.8, minimist@npm:~1.2.5":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 8598f846f2b7546b22b01ce486df27da216a302367afe17f2a032da12fcb8d33bfbf2c523051230864abf0b806748bd60d4cd0863fae35fe104da1ff6194a185
@@ -5310,7 +5310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.5.1, rxjs@npm:^7.8.0":
+"rxjs@npm:^7.5.1, rxjs@npm:^7.8.1":
   version: 7.8.1
   resolution: "rxjs@npm:7.8.1"
   dependencies:
@@ -5529,9 +5529,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "start-server-and-test@npm:2.0.1"
+"start-server-and-test@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "start-server-and-test@npm:2.0.2"
   dependencies:
     arg: "npm:^5.0.2"
     bluebird: "npm:3.7.2"
@@ -5540,12 +5540,12 @@ __metadata:
     execa: "npm:5.1.1"
     lazy-ass: "npm:1.6.0"
     ps-tree: "npm:1.2.0"
-    wait-on: "npm:7.0.1"
+    wait-on: "npm:7.1.0"
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 6d3016aec30cc1e791d328ebc6f3ea415070779e6d7588e6150e61142e83fa237bf51cc4140a70712ddd77cb79a2ef03b9065ca990e7ce431575449e05e25c5b
+  checksum: ff6e2e8becdc02ab8ce0c9ec875ded3112130b2f18aa94afc909cbf6e7493ca0e81ea225aac44e97aad4db2c7316165dac64b01a24450a07e00f6c76c8668551
   languageName: node
   linkType: hard
 
@@ -6031,7 +6031,7 @@ __metadata:
     next: "npm:^13.5.6"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    start-server-and-test: "npm:^2.0.1"
+    start-server-and-test: "npm:^2.0.2"
     typescript: "npm:^5.2.2"
   languageName: unknown
   linkType: soft
@@ -6136,18 +6136,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:7.0.1":
-  version: 7.0.1
-  resolution: "wait-on@npm:7.0.1"
+"wait-on@npm:7.1.0":
+  version: 7.1.0
+  resolution: "wait-on@npm:7.1.0"
   dependencies:
     axios: "npm:^0.27.2"
-    joi: "npm:^17.7.0"
+    joi: "npm:^17.11.0"
     lodash: "npm:^4.17.21"
-    minimist: "npm:^1.2.7"
-    rxjs: "npm:^7.8.0"
+    minimist: "npm:^1.2.8"
+    rxjs: "npm:^7.8.1"
   bin:
     wait-on: bin/wait-on
-  checksum: c2cfde10716c9bf569e21c9327d8aa713a724c2a9012b45523360d550c662354ed668a3caed1866de7f5af3fe246a5e5011b4d6df4732d7827e31c5c174f90bf
+  checksum: 5217e030512dbe14794ca9c0b936c647aa2b04712df54502b4c6baa86fec7aa7aa3da6675eb982892eddc6d7ee7fd1babd9a63c1959dbb02d7e8138babf11d13
   languageName: node
   linkType: hard
 
