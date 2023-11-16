@@ -1772,13 +1772,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.27.2":
-  version: 0.27.2
-  resolution: "axios@npm:0.27.2"
+"axios@npm:^1.6.1":
+  version: 1.6.2
+  resolution: "axios@npm:1.6.2"
   dependencies:
-    follow-redirects: "npm:^1.14.9"
+    follow-redirects: "npm:^1.15.0"
     form-data: "npm:^4.0.0"
-  checksum: 4cd898afe90caaf05307fc5a0da4c61012493b6bfd4937fff9774455c01d368db583b17c4737e73853f149b32e615487930b491661682a1f69a1973b1f533bb7
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 5569c8607ca47eb9b074ed163223baa43f58e416a4f56c2bfe15f32fd87f5f12b386d3fbbd9360d96f4131e002b1388a283271c8465227b52692d14b493935b8
   languageName: node
   linkType: hard
 
@@ -3258,13 +3259,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.9":
-  version: 1.15.2
-  resolution: "follow-redirects@npm:1.15.2"
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.3
+  resolution: "follow-redirects@npm:1.15.3"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 930171f8b81bf00e9368df4b17f3b835934762d51192632af53a51a8a608d5510a1ffbc6da5761dce9996cdbd750740490ca844320e5ff11cdaf2329a5a69647
+  checksum: bbdd012afa48de9d20ab9547a06b8f2150690b58e4cc60d8125b1f615750b7c9152953bb05a6f27371dc137459ad71fbba7eb3243b18b83280c805bcb217eb33
   languageName: node
   linkType: hard
 
@@ -4995,6 +4996,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: 0bba2ef7c8374b384e94e4477764e53df66fcdfa7d19e2c4a063cb39eea979c139ce13981970223665422e72b7d149609a927046e2e40ab340b84d91af082591
+  languageName: node
+  linkType: hard
+
 "ps-tree@npm:1.2.0":
   version: 1.2.0
   resolution: "ps-tree@npm:1.2.0"
@@ -5535,8 +5543,8 @@ __metadata:
   linkType: hard
 
 "start-server-and-test@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "start-server-and-test@npm:2.0.2"
+  version: 2.0.3
+  resolution: "start-server-and-test@npm:2.0.3"
   dependencies:
     arg: "npm:^5.0.2"
     bluebird: "npm:3.7.2"
@@ -5545,12 +5553,12 @@ __metadata:
     execa: "npm:5.1.1"
     lazy-ass: "npm:1.6.0"
     ps-tree: "npm:1.2.0"
-    wait-on: "npm:7.1.0"
+    wait-on: "npm:7.2.0"
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: ff6e2e8becdc02ab8ce0c9ec875ded3112130b2f18aa94afc909cbf6e7493ca0e81ea225aac44e97aad4db2c7316165dac64b01a24450a07e00f6c76c8668551
+  checksum: 42bdedaec0cf363d69d13aa3f9b1c112eed16bce2c22c06e807c169395dc12aa1f0ffcd3e477bc669c9f5caf9ef869151ea4a4b17c9489df89b729434aaec3fd
   languageName: node
   linkType: hard
 
@@ -6141,18 +6149,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:7.1.0":
-  version: 7.1.0
-  resolution: "wait-on@npm:7.1.0"
+"wait-on@npm:7.2.0":
+  version: 7.2.0
+  resolution: "wait-on@npm:7.2.0"
   dependencies:
-    axios: "npm:^0.27.2"
+    axios: "npm:^1.6.1"
     joi: "npm:^17.11.0"
     lodash: "npm:^4.17.21"
     minimist: "npm:^1.2.8"
     rxjs: "npm:^7.8.1"
   bin:
     wait-on: bin/wait-on
-  checksum: 5217e030512dbe14794ca9c0b936c647aa2b04712df54502b4c6baa86fec7aa7aa3da6675eb982892eddc6d7ee7fd1babd9a63c1959dbb02d7e8138babf11d13
+  checksum: aaa872d2a86c0f659ac3e524c79943ffd266e075682f6688463b6f062cd58cf314d9d4c01199deb21b9312e0f56d15aa181fb6f3a612c8cbb595c6eba1e2d979
   languageName: node
   linkType: hard
 
