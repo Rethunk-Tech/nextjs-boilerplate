@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
-    "@next/eslint-plugin-next": "^14.0.2",
+    "@next/eslint-plugin-next": "^14.0.3",
     "@types/node": "^20.9.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
