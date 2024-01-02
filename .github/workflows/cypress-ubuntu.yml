@@ -8,7 +8,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node: [18, 16]
+        node: [20, 18]
 
     name: 22.04, Node v${{ matrix.node }}
     steps:
@@ -59,7 +59,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node: [18, 16]
+        node: [20, 18]
 
     name: 20.04, Node v${{ matrix.node }}
     steps:
