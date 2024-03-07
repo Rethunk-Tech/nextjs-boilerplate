@@ -1016,21 +1016,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:14.1.3":
+"@next/eslint-plugin-next@npm:14.1.3, @next/eslint-plugin-next@npm:^14.1.3":
   version: 14.1.3
   resolution: "@next/eslint-plugin-next@npm:14.1.3"
   dependencies:
     glob: 10.3.10
   checksum: 9da2d1266cd44a0912e7d9ba40d534b96237d01479917afa1e341c8ed90f97def87072cb15af41edaf19850733847c1c0db6d9a249d3f3e57bfdb968cb4ce81b
-  languageName: node
-  linkType: hard
-
-"@next/eslint-plugin-next@npm:^14.1.2":
-  version: 14.1.2
-  resolution: "@next/eslint-plugin-next@npm:14.1.2"
-  dependencies:
-    glob: 10.3.10
-  checksum: abb81492c99dca1aeb9fc3438733ed506de1401d959817e50b831e9296f250220a09d084c631da4736dab6e7c66b3f2db5499c449af086965b7ce61d8feeed0b
   languageName: node
   linkType: hard
 
@@ -6823,7 +6814,7 @@ __metadata:
     "@mui/icons-material": ^5.15.12
     "@mui/material": ^5.15.12
     "@mui/system": ^5.15.12
-    "@next/eslint-plugin-next": ^14.1.2
+    "@next/eslint-plugin-next": ^14.1.3
     "@types/node": ^20.11.25
     "@types/react": ^18.2.64
     "@types/react-dom": ^18.2.21
