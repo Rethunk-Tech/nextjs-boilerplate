@@ -14,4 +14,7 @@
     "typescript",
     "typescriptreact",
   ],
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
 }
