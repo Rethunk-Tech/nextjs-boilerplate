@@ -1,88 +1,55 @@
-import HomeRounded from '@mui/icons-material/HomeRounded'
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import Footer from 'components/example/Footer'
-import Link from 'components/mui/Link'
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import branding from 'branding'
+import { useRouter } from 'next/router'
 
-const styles = {
-  container: {
-    display:    'grid',
-    height:     '100vh',
-    placeItems: 'center',
-    textAlign:  'center',
-  },
+/**
+ * Out of Box Experience page
+ * 
+ * Allows new users to decide between starting the device setup or restoring a
+ * previous device backup.
+ * 
+ * @returns {JSX.Element} JSX.Element - NextJS format page
+ */
+export default function Index(): JSX.Element {
+  const router = useRouter()
 
-  typography: {
-    my: 4,
+  return <Box
+    sx={{
+      height: '100svh',
 
-    // no marinBottom on last of type
-    '&:last-of-type': {
-      mb: 0,
-    },
+      '&, & > *': {
+        display:    'grid',
+        placeItems: 'center',
+        textAlign:  'center',
+      },
+    }}
+  >
+    <Box>
+      <Typography
+        sx={{ mb: 4 }}
+        variant="h1"
+      >
+        {branding.company}
+      </Typography>
 
-    // link
-    '& a': {
-      textDecoration: 'none',
-    },
+      <Button
+        size="large"
+        sx={{ mb: 2 }}
+        variant="contained"
+      >
+        Start Device Setup
+      </Button>
 
-    // code
-    '& code': {
-      border:       '1px solid',
-      borderColor:  'secondary.light',
-      borderRadius: 1,
-      color:        'secondary.main',
-      display:      'inline-block',
-      px:           1,
-      py:           0.5,
-    },
-  },
-}
-
-
-const Home: NextPage = (): JSX.Element => {
-  return <>
-    <Head>
-      <title>Boilerplate by Rethunk.Tech</title>
-    </Head>
-
-    {/* full-height container with centered content */}
-    <Box sx={styles.container}>
-      {/* inner container holds centered content together */}
-      <Box>
-        <HomeRounded sx={{ fontSize: '14rem' }} />
-
-        <Typography component="h1" sx={styles.typography} variant="h2">
-          <Link
-            href="https://nextjs.org"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Next.js
-          </Link> + <Link
-            href="https://mui.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            MUI
-          </Link> + <Link
-            href="https://typescriptlang.org"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            TypeScript
-          </Link>!
-        </Typography>
-
-        <Typography component="h4" sx={styles.typography} variant="h4">
-          Get started by editing <code>pages/index.tsx</code>
-        </Typography>
-      </Box>
+      <Button
+        color="secondary"
+        onClick={() => router.push('/login')}
+        size="large"
+        variant="text"
+      >
+        Restore
+      </Button>
     </Box>
-
-    <Footer />
-  </>
+  </Box>
 }
-
-export default Home
