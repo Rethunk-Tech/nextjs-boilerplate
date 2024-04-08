@@ -4,6 +4,8 @@ import CssBaseline from '@mui/material/CssBaseline'
 import type { Theme } from '@mui/material/styles'
 import { createTheme, styled } from '@mui/material/styles'
 import ThemeProvider from '@mui/system/ThemeProvider'
+import { LocalizationProvider } from '@mui/x-date-pickers'
+import { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment'
 import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs'
 import { SessionContextProvider } from '@supabase/auth-helpers-react'
 import Loader from 'components/shared/Loader'
@@ -59,16 +61,18 @@ const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProp
       <CssBaseline enableColorScheme />
 
       <Main>
-        {supabaseClient === null ? <Loader /> : <SessionContextProvider
-          supabaseClient={supabaseClient}
-          initialSession={initialSession}
-        >
-          {Component.auth ? <AuthWrapper>
-            <Component {...pageProps} />
-          </AuthWrapper> : (
-            <Component {...pageProps} />
-          )}
-        </SessionContextProvider>}
+        <LocalizationProvider dateAdapter={AdapterMoment}>
+          {supabaseClient === null ? <Loader /> : <SessionContextProvider
+            supabaseClient={supabaseClient}
+            initialSession={initialSession}
+          >
+            {Component.auth ? <AuthWrapper>
+              <Component {...pageProps} />
+            </AuthWrapper> : (
+              <Component {...pageProps} />
+            )}
+          </SessionContextProvider>}
+        </LocalizationProvider>
       </Main>
     </ThemeProvider>
   </CacheProvider>
