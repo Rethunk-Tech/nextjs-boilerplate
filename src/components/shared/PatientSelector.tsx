@@ -3,10 +3,12 @@ import Divider from '@mui/material/Divider'
 import FormControl from '@mui/material/FormControl'
 import InputLabel from '@mui/material/InputLabel'
 import MenuItem from '@mui/material/MenuItem'
+import type { SelectChangeEvent } from '@mui/material/Select'
 import Select from '@mui/material/Select'
-import { PATIENTS } from 'MOCK'
+import { useSupabaseClient } from '@supabase/auth-helpers-react'
+import Link from 'components/mui/Link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { Profile } from 'types/Profile'
 
 type Props = {
@@ -34,17 +36,44 @@ export default function PatientSelector(props: Props): JSX.Element {
     role,
   } = props
 
+  const supabase = useSupabaseClient()
+
+  const [patients, setPatients] = useState<Profile[]>([])
+  useEffect(() => {
+    const fetchPatients = async (): Promise<void> => {
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('*')
+
+      if (error) {
+        console.error(error)
+        return
+      }
+
+      setPatients(data || [])
+    }
+
+    fetchPatients()
+  }, [supabase])
+
   const [selectedPatient, setSelectedPatient] = useState<string>('')
-  const [patients] = useState<Profile[]>(PATIENTS)
+  const handleSelection = useCallback((event: SelectChangeEvent) => {
+    setSelectedPatient(event.target.value)
+  }, [])
 
   const router = useRouter()
 
   return <>
     <FormControl fullWidth variant="outlined">
-      <InputLabel>{noun}</InputLabel>
+      <InputLabel>
+        {patients.length === 0
+          ? `None found. Add a ${noun} first.`
+          : `Select ${noun}`}
+      </InputLabel>
       <Select
+        disabled={!patients.length}
         label={noun}
-        onChange={e => setSelectedPatient(e.target.value)}
+        onChange={handleSelection}
         value={selectedPatient}
       >
         {patients.map(x => <MenuItem
@@ -73,6 +102,7 @@ export default function PatientSelector(props: Props): JSX.Element {
     <Button
       fullWidth
       href={`/${role}/add-patient/`}
+      LinkComponent={Link}
       variant="outlined"
     >
       New {noun}
@@ -80,6 +110,7 @@ export default function PatientSelector(props: Props): JSX.Element {
     <Button
       fullWidth
       href={`/${role}/-1/`}
+      LinkComponent={Link}
       variant="outlined"
     >
       One-Time {noun}
