@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 /**
  * Out of Box Experience page
  * 
- * Allows new users to decide between starting the device setup or restoring a
- * previous device backup.
+ * @description Allows new users to decide between starting the device setup
+ * or restoring a previous device backup.
  * 
  * @returns {JSX.Element} JSX.Element - NextJS format page
  */
@@ -44,8 +44,7 @@ export default function Index(): JSX.Element {
 
       <Button
         color="secondary"
-        onClick={() => router.push('/login')}
-        size="large"
+        onClick={() => router.push('/auth/signin')}
         variant="text"
       >
         Restore

@@ -1,6 +1,6 @@
 const branding = {
   name:    'ROM',
-  company: 'PeleOS',
+  company: 'PeleOs',
 }
 
 export default branding
