@@ -1,5 +1,5 @@
 export type Record = {
-  id: string
+  id?: string
 
   created_at: string
   created_by?: string

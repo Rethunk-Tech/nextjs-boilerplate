@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import AppBar from 'components/shared/AppBar'
-import PatientCreateForm from 'components/shared/PatientCreateForm'
+import PatientForm from 'components/shared/PatientForm'
 import Head from 'next/head'
 
 /**
@@ -67,7 +67,7 @@ export default function ClinicianSelectPatient(): JSX.Element {
           width:      '30vw',
         }}
       >
-        <PatientCreateForm noun='patient' />
+        <PatientForm noun='patient' />
       </Box>
     </Box>
   </>

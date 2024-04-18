@@ -4,7 +4,7 @@ import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import LabeledIconButton from 'components/mui/LabeledIconButton'
 import AppBar from 'components/shared/AppBar'
-import ExerciseList from 'components/shared/ExerciseList'
+import ProgramList from 'components/shared/ProgramList'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
@@ -38,9 +38,9 @@ export default function PatientPage(): JSX.Element {
         height: 'calc(100svh - 64px)',
       }}
     >
-      {/* <PatientUpdateForm noun="profile" patientID={patientID} /> */}
+      {/* <PatientForm noun="profile" patientID={patientID} wide /> */}
 
-      <ExerciseList role="patient" patientID={patientID} />
+      <ProgramList role="patient" patientID={patientID} />
 
       <Box
         sx={{

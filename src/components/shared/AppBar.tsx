@@ -5,9 +5,12 @@ import Paper from '@mui/material/Paper'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { alpha, type Theme } from '@mui/material/styles'
-import { PATIENTS } from 'MOCK'
+import { useSupabaseClient, useUser } from '@supabase/auth-helpers-react'
 import Link from 'components/mui/Link'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import type { Profile } from 'types/Profile'
+import { PROFILES_TABLE } from 'types/Profile'
 
 type Props = {
   patientID?: string
@@ -20,11 +23,30 @@ export default function AppBar(props: Props): JSX.Element {
     role,
   } = props
 
-  const user = {
-    full_name: 'Blais, Damon'
-  }
+  const supabase = useSupabaseClient()
+  const user = useUser()
 
-  const selectedPatient = PATIENTS.find(patient => patient.id === patientID)
+  const [patient, setPatient] = useState<Profile>({} as Profile)
+  useEffect(() => {
+    if (!patientID) return
+
+    const fetchPatient = async (): Promise<void> => {
+      const { data, error } = await supabase
+        .from(PROFILES_TABLE)
+        .select('*')
+        .eq('id', patientID)
+        .single()
+
+      if (error) {
+        console.error('Error fetching patient:', error)
+        return
+      }
+
+      setPatient(data)
+    }
+
+    fetchPatient()
+  }, [patientID, supabase])
 
   const router = useRouter()
 
@@ -47,7 +69,7 @@ export default function AppBar(props: Props): JSX.Element {
       >
         <Link href={`/${role}`}>
           <Typography sx={{ lineHeight: 0.75, mt: 1 }} variant="h6">
-            {user.full_name}
+            {user?.user_metadata.full_name || user?.email}
           </Typography>
           <Typography variant="caption">
             {role.charAt(0).toUpperCase() + role.slice(1)}
@@ -71,7 +93,7 @@ export default function AppBar(props: Props): JSX.Element {
       >
         <Link href={`/${role}/${patientID}`}>
           <Typography sx={{ lineHeight: 0.75, mt: 1 }} variant="h6">
-            {selectedPatient?.last_name}, {selectedPatient?.first_name}
+            {patient?.last_name}, {patient?.first_name}
           </Typography>
           <Typography variant="caption">
             {role === 'clinician' ? 'Patient' : 'Profile'}

@@ -11,10 +11,11 @@ import { useRouter } from 'next/router'
  * 
  * @returns {JSX.Element} JSX.Element - NextJS format page
  */
-export default function PatientPatientProgramPage(): JSX.Element {
+export default function PatientProgramPage(): JSX.Element {
   const router = useRouter()
 
   const patientID = router.query.patientID as string
+  const programID = router.query.programID as string
 
   return <>
     <Head>
@@ -24,6 +25,10 @@ export default function PatientPatientProgramPage(): JSX.Element {
     <AppBar role="patient" patientID={patientID} />
     <Toolbar />
 
-    <ProgramView role="patient" patientID={patientID} />
+    <ProgramView
+      role="patient"
+      patientID={patientID}
+      programID={programID}
+    />
   </>
 }

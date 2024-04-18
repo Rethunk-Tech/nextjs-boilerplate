@@ -15,6 +15,7 @@ export default function ClinicianPatientProgramPage(): JSX.Element {
   const router = useRouter()
 
   const patientID = router.query.patientID as string
+  const programID = router.query.programID as string
 
   return <>
     <Head>
@@ -24,6 +25,10 @@ export default function ClinicianPatientProgramPage(): JSX.Element {
     <AppBar role="clinician" patientID={patientID} />
     <Toolbar />
 
-    <ProgramView role="clinician" patientID={patientID} />
+    <ProgramView
+      role="clinician"
+      patientID={patientID}
+      programID={programID}
+    />
   </>
 }

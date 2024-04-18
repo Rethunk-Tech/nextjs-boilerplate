@@ -4,8 +4,8 @@ import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import LabeledIconButton from 'components/mui/LabeledIconButton'
 import AppBar from 'components/shared/AppBar'
-import ExerciseList from 'components/shared/ExerciseList'
-import PatientUpdateForm from 'components/shared/PatientUpdateForm'
+import PatientForm from 'components/shared/PatientForm'
+import ProgramList from 'components/shared/ProgramList'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
@@ -32,20 +32,24 @@ export default function ClinicianPage(): JSX.Element {
     <Box
       sx={{
         display:          'grid',
-        gridTemplateRows: '1fr auto auto',
+        gridTemplateRows: 'auto 1fr auto',
         gap:              2,
-        p:                3,
+        m:                3,
 
         height: 'calc(100svh - 64px)',
       }}
     >
-      <PatientUpdateForm noun="patient" patientID={patientID} />
+      <Box sx={{ flex: 0, flexShrink: 1 }}>
+        <PatientForm noun="patient" patientID={patientID} wide />
+      </Box>
 
-      <ExerciseList role="clinician" patientID={patientID} />
+      <ProgramList role="clinician" patientID={patientID} />
 
       <Box
         sx={{
           display:        'grid',
+          flex:           0,
+          flexShrink:     1,
           gap:            2,
           gridAutoFlow:   'column',
           justifyContent: 'stretch',
