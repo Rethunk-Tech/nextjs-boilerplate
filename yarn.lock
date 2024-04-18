@@ -1110,9 +1110,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/x-date-pickers@npm:^7.1.1":
-  version: 7.1.1
-  resolution: "@mui/x-date-pickers@npm:7.1.1"
+"@mui/x-date-pickers@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "@mui/x-date-pickers@npm:7.2.0"
   dependencies:
     "@babel/runtime": ^7.24.0
     "@mui/base": ^5.0.0-beta.40
@@ -1154,7 +1154,7 @@ __metadata:
       optional: true
     moment-jalaali:
       optional: true
-  checksum: 0deac4b1a2d279fcc8273c1edb5620d8ac1ac4495f2d1f51e091dca17888ed2a09c6a2c9b068f4430d1840515e394523f71c87e5df8eaca56bb8cede955e09fe
+  checksum: b19723ec6c1bc18e9e099904a0054c97f681104f0ca7f48d3e3a91f936c01bf5f88f70bea97ecbfd3d43eeb9b6595a0d9ac2b459d9a5bd1cd64bce73e4ea481b
   languageName: node
   linkType: hard
 
@@ -6014,7 +6014,7 @@ __metadata:
     "@mui/icons-material": ^5.15.15
     "@mui/material": ^5.15.15
     "@mui/system": ^5.15.15
-    "@mui/x-date-pickers": ^7.1.1
+    "@mui/x-date-pickers": ^7.2.0
     "@next/eslint-plugin-next": ^14.2.2
     "@supabase/auth-helpers-nextjs": ^0.10.0
     "@supabase/auth-helpers-react": ^0.5.0
