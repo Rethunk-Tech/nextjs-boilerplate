@@ -24,7 +24,7 @@
     "@mui/x-date-pickers": "^7.1.1",
     "@supabase/auth-helpers-nextjs": "^0.9.0",
     "@supabase/auth-helpers-react": "^0.4.2",
-    "@supabase/supabase-js": "^2.42.0",
+    "@supabase/supabase-js": "^2.42.4",
     "eslint-plugin-mui-path-imports": "^0.0.15",
     "moment": "^2.30.1",
     "next": "^14.2.2",
