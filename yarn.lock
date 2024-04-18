@@ -1311,12 +1311,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-helpers-react@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "@supabase/auth-helpers-react@npm:0.4.2"
+"@supabase/auth-helpers-react@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@supabase/auth-helpers-react@npm:0.5.0"
   peerDependencies:
-    "@supabase/supabase-js": ^2.19.0
-  checksum: e521c5a62444e2f013f1d8af7386abf1a9a35fc4a1160b7e1e3834e1cf9b48c8a77e706b0f322ce9946d7ccfdfd9f0f8d071bfa138d648ac707327b4f530c789
+    "@supabase/supabase-js": ^2.39.8
+  checksum: dfc81740af5c514158845800c709552249e5eae985410ffbb222ed041603770545b60507e98afaca3f122ccd3e793c734ab08f3346bebb6faaf8a35b3882faba
   languageName: node
   linkType: hard
 
@@ -6017,7 +6017,7 @@ __metadata:
     "@mui/x-date-pickers": ^7.1.1
     "@next/eslint-plugin-next": ^14.2.2
     "@supabase/auth-helpers-nextjs": ^0.9.0
-    "@supabase/auth-helpers-react": ^0.4.2
+    "@supabase/auth-helpers-react": ^0.5.0
     "@supabase/supabase-js": ^2.42.4
     "@types/node": ^20.12.7
     "@types/react": ^18.2.79
