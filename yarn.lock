@@ -1331,12 +1331,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-js@npm:2.63.0":
-  version: 2.63.0
-  resolution: "@supabase/auth-js@npm:2.63.0"
+"@supabase/auth-js@npm:2.63.1":
+  version: 2.63.1
+  resolution: "@supabase/auth-js@npm:2.63.1"
   dependencies:
     "@supabase/node-fetch": ^2.6.14
-  checksum: be8f65053d55f772e7e52132d98b2f3d3b982a4d85882a81d1858622db9089e2ff2d4555a2721df0d795e72eee79db5f456aacc7d3924d79bcf2ef4a02900465
+  checksum: 651a50348e3b3fcae62a50a218035527b8bc70a320a2122471a4220d7d415d92e12ed073c2b21e7bbd9d189a03977cacb5bdab4d4742e1c80337957a946e85c9
   languageName: node
   linkType: hard
 
@@ -1389,16 +1389,16 @@ __metadata:
   linkType: hard
 
 "@supabase/supabase-js@npm:^2.42.4":
-  version: 2.42.4
-  resolution: "@supabase/supabase-js@npm:2.42.4"
+  version: 2.42.5
+  resolution: "@supabase/supabase-js@npm:2.42.5"
   dependencies:
-    "@supabase/auth-js": 2.63.0
+    "@supabase/auth-js": 2.63.1
     "@supabase/functions-js": 2.3.0
     "@supabase/node-fetch": 2.6.15
     "@supabase/postgrest-js": 1.15.2
     "@supabase/realtime-js": 2.9.4
     "@supabase/storage-js": 2.5.5
-  checksum: b43f9c30c70d66c24be8ed8871aef980bf4dc60ac76356bfa33f9ede1869bf082bd6ffb628a7719eb3cbe9e90b17ea7b7e3dafd83f7fb0583ec117f9f55a5a45
+  checksum: 05add32f3f1749a4acb175c94819cb9d0ed5b3f284857aca019cdb4f776396cc23bc4c42ff82425727f104bcaa7a06cde93b39f67ac6ca2fe52dbbe2e0e8350e
   languageName: node
   linkType: hard
 
