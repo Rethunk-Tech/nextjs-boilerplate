@@ -22,7 +22,7 @@
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.5",
     "@emotion/utils": "^1.2.1",
-    "@mui/icons-material": "^5.15.14",
+    "@mui/icons-material": "^5.15.17",
     "@mui/material": "^5.15.17",
     "@mui/system": "^5.15.14",
     "eslint-plugin-mui-path-imports": "^0.0.15",
