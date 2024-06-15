@@ -1146,12 +1146,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.12":
-  version: 20.12.12
-  resolution: "@types/node@npm:20.12.12"
+"@types/node@npm:^20.14.2":
+  version: 20.14.2
+  resolution: "@types/node@npm:20.14.2"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 5373983874b9af7c216e7ca5d26b32a8d9829c703a69f1e66f2113598b5be8582c0e009ca97369f1ec9a6282b3f92812208d06eb1e9fc3bd9b939b022303d042
+  checksum: 265362479b8f3b50fcd1e3f9e9af6121feb01a478dff0335ae67cccc3babfe45d0f12209d3d350595eebd7e67471762697b877c380513f8e5d27a238fa50c805
   languageName: node
   linkType: hard
 
@@ -7039,7 +7039,7 @@ __metadata:
     "@mui/material": ^5.15.18
     "@mui/system": ^5.15.15
     "@next/eslint-plugin-next": ^14.2.3
-    "@types/node": ^20.12.12
+    "@types/node": ^20.14.2
     "@types/react": ^18.3.3
     "@types/react-dom": ^18.3.0
     "@typescript-eslint/eslint-plugin": ^7.10.0
