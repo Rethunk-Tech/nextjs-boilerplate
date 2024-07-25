@@ -20,7 +20,7 @@
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.4",
     "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.11.5",
+    "@emotion/styled": "^11.13.0",
     "@emotion/utils": "^1.4.0",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
