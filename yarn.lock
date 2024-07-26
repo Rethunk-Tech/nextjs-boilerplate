@@ -372,29 +372,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:^11.11.0":
-  version: 11.11.0
-  resolution: "@emotion/cache@npm:11.11.0"
-  dependencies:
-    "@emotion/memoize": ^0.8.1
-    "@emotion/sheet": ^1.2.2
-    "@emotion/utils": ^1.2.1
-    "@emotion/weak-memoize": ^0.3.1
-    stylis: 4.2.0
-  checksum: 8eb1dc22beaa20c21a2e04c284d5a2630a018a9d51fb190e52de348c8d27f4e8ca4bbab003d68b4f6cd9cc1c569ca747a997797e0f76d6c734a660dc29decf08
-  languageName: node
-  linkType: hard
-
-"@emotion/cache@npm:^11.13.0":
-  version: 11.13.0
-  resolution: "@emotion/cache@npm:11.13.0"
+"@emotion/cache@npm:^11.11.0, @emotion/cache@npm:^11.13.0":
+  version: 11.13.1
+  resolution: "@emotion/cache@npm:11.13.1"
   dependencies:
     "@emotion/memoize": ^0.9.0
     "@emotion/sheet": ^1.4.0
     "@emotion/utils": ^1.4.0
     "@emotion/weak-memoize": ^0.4.0
     stylis: 4.2.0
-  checksum: 65364171c8fb19435d238dee80a372674fc78d0747314a6051220f695276e1fe2132793f270f3a6a982592166d2a689244e780512aca1fb1fc0e0c7cbf53e69c
+  checksum: 94b161786a03a08a1e30257478fad9a9be1ac8585ddca0c6410d7411fd474fc8b0d6d1167d7d15bdb012d1fd8a1220ac2bbc79501ad9b292b83c17da0874d7de
   languageName: node
   linkType: hard
 
@@ -411,13 +398,6 @@ __metadata:
   dependencies:
     "@emotion/memoize": ^0.9.0
   checksum: d3e36e493de3b4446634010c46cb8b99fa8ca271a8e7efba9cecf59a672ce1ebcfea8e8c7a0627dcafae87b4ab0d58c70fcf4589b849ca48e0d1e9f6c899e8be
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "@emotion/memoize@npm:0.8.1"
-  checksum: a19cc01a29fcc97514948eaab4dc34d8272e934466ed87c07f157887406bc318000c69ae6f813a9001c6a225364df04249842a50e692ef7a9873335fbcc141b0
   languageName: node
   linkType: hard
 
@@ -479,13 +459,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/sheet@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@emotion/sheet@npm:1.2.2"
-  checksum: d973273c9c15f1c291ca2269728bf044bd3e92a67bca87943fa9ec6c3cd2b034f9a6bfe95ef1b5d983351d128c75b547b43ff196a00a3875f7e1d269793cecfe
-  languageName: node
-  linkType: hard
-
 "@emotion/sheet@npm:^1.4.0":
   version: 1.4.0
   resolution: "@emotion/sheet@npm:1.4.0"
@@ -540,13 +513,6 @@ __metadata:
   version: 1.4.0
   resolution: "@emotion/utils@npm:1.4.0"
   checksum: 212af0b0d6bcaa63c76e1a36e35bee4d3579359316c03bf970faabb5427a4c0aab3e2346a721bac54f0c8e027958e759c5682be78f308755a1d9753e83963621
-  languageName: node
-  linkType: hard
-
-"@emotion/weak-memoize@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@emotion/weak-memoize@npm:0.3.1"
-  checksum: b2be47caa24a8122622ea18cd2d650dbb4f8ad37b636dc41ed420c2e082f7f1e564ecdea68122b546df7f305b159bf5ab9ffee872abd0f052e687428459af594
   languageName: node
   linkType: hard
 
