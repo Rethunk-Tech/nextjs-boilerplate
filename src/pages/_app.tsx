@@ -1,22 +1,13 @@
-import { CacheProvider } from '@emotion/react'
-import type { EmotionCache } from '@emotion/utils'
+import { AppCacheProvider } from '@mui/material-nextjs/v14-pagesRouter'
 import CssBaseline from '@mui/material/CssBaseline'
 import type { Theme } from '@mui/material/styles'
 import { createTheme, styled } from '@mui/material/styles'
 import ThemeProvider from '@mui/system/ThemeProvider'
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
 import Head from 'next/head'
-import type { FunctionComponent, PropsWithChildren } from 'react'
 import 'styles/globals.css'
+
 import lightThemeOptions from 'styles/lightThemeOptions'
-import createEmotionCache from 'utility/createEmotionCache'
-
-interface MyAppProps extends AppProps {
-  emotionCache?: EmotionCache
-}
-
-const clientSideEmotionCache: EmotionCache = createEmotionCache()
-
 const lightTheme: Theme = createTheme(lightThemeOptions)
 
 const Main = styled('main', {
@@ -32,11 +23,11 @@ const Main = styled('main', {
   }),
 }))
 
-const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProps>) => {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
+export default function MyApp(props: AppProps): JSX.Element {
+  const { Component, pageProps } = props
 
   return (
-    <CacheProvider value={emotionCache}>
+    <AppCacheProvider {...props}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
@@ -47,8 +38,6 @@ const MyApp: FunctionComponent<MyAppProps> = (props: PropsWithChildren<MyAppProp
           <Component {...pageProps} />
         </Main>
       </ThemeProvider>
-    </CacheProvider>
+    </AppCacheProvider>
   )
 }
-
-export default MyApp
