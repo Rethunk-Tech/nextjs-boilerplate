@@ -24,8 +24,6 @@ jobs:
         uses: cypress-io/github-action@v6.6.1
         with:
           record: false
-          # tag: node-${{ matrix.node }}
-          # group: Chrome Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: chrome
           build: yarn run build
@@ -38,8 +36,6 @@ jobs:
         uses: cypress-io/github-action@v6.6.1
         with:
           record: false
-          # tag: node-${{ matrix.node }}
-          # group: Firefox Tests on Node v${{ matrix.node }}
           cache-key: node-v${{ matrix.node }}-on-${{ runner.os }}-hash-${{ hashFiles('yarn.lock') }}
           browser: firefox
           build: echo # Already built from Chrome test
