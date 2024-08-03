@@ -1,4 +1,4 @@
-name: Cypress E2E Tests on Ubuntu
+name: Cypress E2E Tests
 
 on: [push]
 
@@ -10,7 +10,7 @@ jobs:
       matrix:
         node: [20, 18]
 
-    name: 22.04, Node v${{ matrix.node }}
+    name: Ubuntu 22.04, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v4
