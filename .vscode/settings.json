@@ -14,4 +14,8 @@
     "typescript",
     "typescriptreact",
   ],
+  "cSpell.words": [
+    "Autobuild",
+    "codeql"
+  ],
 }
