@@ -7,7 +7,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
+        os: [ubuntu-22.04] # ubuntu-24.04 doesn't have a working firefox yet
         node: [20, 22]
     runs-on: ${{ matrix.os }}
 
