@@ -47,5 +47,5 @@
     "start-server-and-test": "^2.0.5",
     "typescript": "^5.5.4"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.4.0"
 }
