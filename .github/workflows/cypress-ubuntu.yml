@@ -4,13 +4,14 @@ on: [push]
 
 jobs:
   cypress-ubuntu-22:
-    runs-on: ubuntu-22.04
     timeout-minutes: 10
     strategy:
       matrix:
-        node: [20, 18]
+        os: [ubuntu-22.04, ubuntu-24.04]
+        node: [20, 22]
+    runs-on: ${{ matrix.os }}
 
-    name: Ubuntu 22.04, Node v${{ matrix.node }}
+    name: ${{ matrix.os }}, Node v${{ matrix.node }}
     steps:
       - name: Setup Node
         uses: actions/setup-node@v4
