@@ -24,6 +24,7 @@
     "@emotion/utils": "^1.4.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "@mui/material-nextjs": "^5.16.6",
     "@mui/system": "^5.16.6",
     "eslint-plugin-mui-path-imports": "^0.0.15",
     "next": "^14.2.5",

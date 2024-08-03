@@ -741,6 +741,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mui/material-nextjs@npm:^5.16.6":
+  version: 5.16.6
+  resolution: "@mui/material-nextjs@npm:5.16.6"
+  dependencies:
+    "@babel/runtime": ^7.23.9
+  peerDependencies:
+    "@emotion/cache": ^11.11.0
+    "@emotion/server": ^11.11.0
+    "@mui/material": ^5.0.0
+    "@types/react": ^17.0.0 || ^18.0.0
+    next: ^13.0.0 || ^14.0.0
+    react: ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@emotion/cache":
+      optional: true
+    "@emotion/server":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: e1bd6544fc7b3825a3f22f7761c1e3093cde76f8cfe72d9dc2ea8e99874c916ae97489f593396a0da5385994f986a764403ec977d527778533879211bd367f94
+  languageName: node
+  linkType: hard
+
 "@mui/material@npm:^5.16.6":
   version: 5.16.6
   resolution: "@mui/material@npm:5.16.6"
@@ -5700,6 +5723,7 @@ __metadata:
     "@emotion/utils": ^1.4.0
     "@mui/icons-material": ^5.16.6
     "@mui/material": ^5.16.6
+    "@mui/material-nextjs": ^5.16.6
     "@mui/system": ^5.16.6
     "@next/eslint-plugin-next": ^14.2.5
     "@types/node": ^22.1.0
