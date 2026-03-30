@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Cypress run Chrome
         uses: cypress-io/github-action@v6.7.2
